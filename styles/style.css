@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Lato:wght@300&family=Open+Sans&family=PT+Sans:ital@1&family=Roboto:ital,wght@1,300&family=Rock+Salt&display=swap');
+
+#content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 17px;
+    font-family: "Joan", "Roboto", "Rock Salt";
+    color: #b77148;
+    height: 100%;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer {
+    margin: 0 auto;
+    padding: 0.60em;
+    max-width: 550px;
+}
+
+header {
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #0067b9;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #0067b9;
+    height: 80px;
+}
+
+
+header img {
+    width: 140px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 3px #0067b9;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 1.9em;
+}
+
+footer h1 {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+footer h2 {
+    font-size: 0.98rem;
+    border-bottom: none;
+    text-shadow: none;
+    margin-top: -40px;
+    color: #b77148;
+    ;
+}
+
+h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    text-indent: o.9ch;
+    border-bottom: 2px solid gray;
+    text-shadow: 0px -2.1px #205960;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #42b0e2;
+    color: white;
+
+}
