@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap');
+
+/* Website COntent */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', 'Lato', 'Tahoma';
+    font-size: 16px;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: darkslateblue;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Lato';
+    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    border-radius: 3px;
+
+}
+
+header h2 {
+    margin-top: -25px;
+    font-family: 'Lato';
+}
+
+footer {
+    font-size: 10px;
+}
+
+img {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+
+.visual-hierarchy,
+.white-space,
+.contrast {
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+.first,
+.second,
+.third {
+    background-color: gray;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: -20px;
+    padding: 10px;
+    font-family: 'Lato';
+}
+
+section h2 {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #000000;
+}
+
+h3 a {
+    padding-left: 10px;
+    color: purple;
+}
+
+h3 a:hover {
+    color: blue;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin: 10px;
+}

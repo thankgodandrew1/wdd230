@@ -1,0 +1,16 @@
+@media only screen and (min-width: 50em) {
+  footer {
+    font-size: 14px;
+  }
+
+  #main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main section:nth-child(3) {
+    grid-column: span 1;
+  }
+
+
+}

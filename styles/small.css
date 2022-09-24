@@ -40,7 +40,12 @@ header img {
     border-radius: 5px;
     box-shadow: 0 0 8px 3px #0067b9;
 }
-
+a{
+    color: #42b0e2;
+}
+a:hover{
+    color: #b77148;
+}
 h1 {
     font-size: 2rem;
 }
