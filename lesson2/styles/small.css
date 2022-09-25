@@ -54,7 +54,7 @@ img {
     background-color: darkgray;
     color: #ffffff;
 }
-
+/* efefef, vivid color wave.webaim.org*/
 .first,
 .second,
 .third {
@@ -75,16 +75,17 @@ section h2 {
 
 h3 a {
     padding-left: 10px;
-    color: purple;
+    color: blue;
 }
 
 h3 a:hover {
-    color: blue;
+    color: purple;
 }
 
 p {
     text-align: center;
     font-size: 20px;
+    color: black;
 }
 
 main {
