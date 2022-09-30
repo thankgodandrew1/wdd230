@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', 'Lato', 'Roboto';
+    font-size: 16px;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    margin: 1em;
+    padding: 0;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #999;
+    padding-top: 1em;
+}
+h1,
+h2{
+    text-align: center;
+    font-family: 'Open Sans';
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-family: lato;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e5002b;
+
+}
+nav a{
+    width: 100%;
+    text-align: center; 
+    color: #fdfff5;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 22px;
+}
+nav a:hover {
+    background-color: #0050a0;
+    color: #fdfff5;
+}
+
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 20%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #0050a0;
+}
+
+.secondary {
+    background-color: #e5002b;
+}
+
+.accent1 {
+    background-color: #a51890;
+}
+
+.accent2 {
+    background-color: #12a8e0;
+}
+.font1{
+    font-family: 'Open Sans';
+}
+.font2{
+    font-family: 'Lato';
+}
+@media screen and (max-width: 550px) {
+    nav{
+        display: block;
+        height: auto;
+        flex-direction: column;
+    }
+    nav a{
+        display: block;
+        padding: 15px;
+    }
+   
+}
