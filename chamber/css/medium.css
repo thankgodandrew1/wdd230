@@ -1,0 +1,91 @@
+@media only screen and (min-width:  35em) {
+	#logo {
+		display: flex;
+		flex-direction: row;
+	}
+    #ogo img {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+    #logo p {
+        padding-top: 50px;
+    }
+    #hero p {
+        font-size: 3.9em;
+        width: 100%;
+        top: 20%;
+    }
+
+    #hero .button {
+        font-size: 1.8rem;
+        width: 150px;
+        left: calc(50% - 90px);
+    }
+
+    #spotlight {
+        display: flex;
+        flex-direction: row;
+    }
+    #spotlight a img{
+        margin: 0 2% 0 2%;
+        width: 96%;
+    }
+    #hero img {
+        width: 100%;
+        /* margin-left: 18px; */
+        height: auto;
+     }
+    #event-weather {
+        display: flex;
+        width: 100%;
+    }
+    #news p{
+        font-size: 1.4em;
+     }
+    #weather {
+        padding-right: 20px;
+        margin-left: 0;
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    #event{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    #temperature {
+        font-size: 4em;
+    }
+    #sky {
+        font-size: 3em;
+    }
+    #event a img {
+        min-width: 322px;
+    }
+    #join {
+        display: block;
+        text-align: center;
+        margin: 10% 0 10% 0;
+    }
+    #join a{
+        color: #eee;
+        background-color: #0050A0
+    }
+
+   #join a:hover{
+    background-color: #A51890;
+   }
+    #chamber-map {
+        padding-top: 70px;
+        font-size: 1.1em;
+        text-align: right;
+        margin-right: 10%;
+        margin-left: auto;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    
+}

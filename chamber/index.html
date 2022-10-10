@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="Author" content="ThankGod Andrew" >
+  <meta name="description"
+    content="Chamber of Commerce Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+  <link rel="stylesheet" href="css/small.css" >
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <div id="content">
+  <header>
+    <nav class="navigation">
+    <div class="navbar-wraper">                      
+    <img class="logo" src="./images/logo.png" alt="chamber logo">
+    <a class="name" href="./index.html">
+        <span class="chamberName">The Mountain</span>
+        <br>
+        Chamber of commerce 
+    </a>
+    <ul>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="socials">
+        <a href="https://www.facebook.com/">
+            <img src="./images/facebook-logo.png"  alt="facebook logo">
+        </a>
+        <a href="https://www.linkedin.com/">
+            <img src="./images/linkedin-logo.png"  alt="linkedin logo">
+        </a>
+    </div>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>ⓧ</span></button>
+    <span class="date"></span>
+</div>
+    <ul class="toggle">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+
+    <div id="hero">
+        <img src="images/hero.jpg" alt="hero logo">
+        <p>Don't think twice<br>Just do It!!</p>
+        <a class="button">Join us</a>
+    </div>
+    <div id="news">
+        <h2>Latest news</h2>
+        <a href="#">
+            <h3>Apprenticeship System</h3>
+            <p>The Mountain Chamber brainstorm the implementation of new members apprenticeship system.</p>
+        </a>
+        <a href="#">
+            <h3>New Appointments</h3>
+            <p>TMCC appoints Dee MD, Andrew president.</p>
+        </a>
+        <a href="#"> 
+            <h3>Ukraine, TMCC</h3>
+            <p>Ukraine, The Mountain Chamber of Commerce partner on trade.</p>
+        </a>
+    </div>
+    <div id="spotlight">
+        <a class="ad" href="./index.html">
+            <img src="./images/ad1.jpg" alt="our members brands ads">
+        </a>
+        <a class="ad" href="./index.html">
+            <img src="./images/ad2.jpg" alt="charlies ice-cream ads">
+        </a>
+        <a class="ad third" href="index.html">
+            <img src="./images/ad3.jpg" alt="McDonalds' ads">
+        </a>
+    </div>
+    <div id="join">
+        <h2>Learn about Us</h2>
+        <p>Discover the benefits of being part of the Mountain Chamber of Commerse.</p>
+        <br>
+        <a class="button">Join Us</a>
+    </div>
+    <div id="event-weather">
+        <div id="event">
+            <h2>Event</h2>
+            <a href="#">
+                <img src="images/event.jpg" alt="breakfast meeting event banner">
+            </a>
+        </div>
+        <div id="weather">
+            <h2>Weather</h2>
+            <img src="images/cloudy.png" alt="cloudy weather icon">
+            <br>
+            <span id="temperature">28&deg;c</span>
+            <br>
+            <span id="sky"></span>Partly Cloudy
+            <br>    
+            <span id="temperatures">Day 29&deg; • Night 25&deg;</span>
+        </div>
+    </div>
+
+</main>
+<footer>
+  <div class="footer">
+      <div id="logo">
+          <img src="images/logo.png" alt="chamber logo">
+          <p>
+              <b>The Mountain<br>
+              Chamber of Commerce</b>
+              <br>
+              7 Borden Street Off GeOff<br>
+              TMCC, 512109</p>
+      </div>
+      <div id="chamber-map">
+          info@tmcc.org
+          <br>
+          +234 (902)-9919-743
+          <br>
+          <a href="https://www.google.com/maps/contrib/107445676844297947170/reviews">
+              📌 Location map pin</a>
+          <br>
+
+      </div>
+  </div>
+  <div class="footer1">
+    <h1>
+        &copy; <span id="current_year"></span> Mountain Chamber .:|:. ThankGod Andrew .:|:. WDD 230 Project .:|:. Last
+        Updated: <span id="last_update"></span>
+      </h1>
+  </div>
+</footer>
+</div>
+  <script src="js/home.js"></script>
+</body>
+
+</html>
