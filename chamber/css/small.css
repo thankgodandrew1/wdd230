@@ -209,7 +209,9 @@ footer {
  #news a{
     text-decoration: none;
  }
-
+#news h3{
+    color: #232523;
+}
  #news h3:hover{
     background-color: var(--accent1-color);
     color: var(--accent3-color);
