@@ -20,8 +20,10 @@ body {
     line-height: 1.5;
     padding: 0;
     color: #232523;
-    box-sizing: border-box;
     overflow: visible;
+}
+img{
+    box-sizing: border-box;
 }
 main {
 	padding-top: 250px;
@@ -174,14 +176,13 @@ footer {
     position: absolute;
     top: 27%;
     left: 50%;
-    /* bottom: ; */
     transform: translate(-50%, -50%);
     font-family: var(--heading-font);
     font-size: 1.8em;
     padding: 5%;
     max-width: 100%;
     color: var(--accent3-color);
-    text-shadow:1px 1px 2px #fff, 1px 1px 10px #232523;
+    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #A51890;
  }
 
  .button {
