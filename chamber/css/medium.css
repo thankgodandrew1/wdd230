@@ -12,15 +12,15 @@
         padding-top: 50px;
     }
     #hero p {
-        font-size: 3.9em;
+        font-size: 4.5em;
         width: 100%;
-        top: 20%;
+        top: 23%;
     }
 
     #hero .button {
         font-size: 1.8rem;
         width: 150px;
-        left: calc(50% - 90px);
+        left: calc(50% - 100px);
     }
 
     #spotlight {
@@ -52,6 +52,7 @@
     #event{
         grid-column: 1/2;
         grid-row: 1;
+        margin-bottom: 15px;
     }
     #temperature {
         font-size: 4em;
@@ -60,7 +61,7 @@
         font-size: 3em;
     }
     #event a img {
-        min-width: 322px;
+        min-width: 20.2em;
     }
     #join {
         display: block;
