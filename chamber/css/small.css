@@ -86,15 +86,14 @@ main {
     color: var(--accent3-color);
 }
 .navbar-wraper #meeting{
-	grid-row: 3/4;
-	grid-column: 1/5;
-	background-color: var(--primary-color);
-	margin: 0 -10px 0 -10px;
-	padding: 7px 7px;
-	font-size: .7em;
-    color: var(--accent3-color);
+    display: none;
 }
-
+#small-meeting{
+    display: block;
+    padding: 10px 10px;
+    color: var(--primary-color);
+    font-size: 1.4em;
+}
 nav {
 	z-index: 10;
 	margin: 0 auto;
@@ -181,7 +180,6 @@ footer {
  #hero img {
     width: 100%;
     height: auto;
-    margin-top: 52px;
  }
 
  #hero p {

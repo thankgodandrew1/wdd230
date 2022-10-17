@@ -34,7 +34,7 @@
     }
     #hero img {
         width: 100%;
-        margin-left: 18px;
+        /* margin-left: 18px; */
         height: auto;
      }
     #event-weather {
@@ -90,6 +90,7 @@
         flex-wrap:wrap;
     }
     .navbar-wraper #meeting{
+        display: block;
         grid-row: 3/4;
         grid-column: 1/5;
         background-color: var(--primary-color);
@@ -97,6 +98,9 @@
         padding: 10px 10px;
         font-size: 1.2em;
         color: var(--accent3-color);
+    }
+    #small-meeting{
+        display: none;
     }
     
 }

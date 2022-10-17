@@ -27,6 +27,7 @@ if (dayOfWeek >= 1  && dayOfWeek <=2) {
     message = 'Welcome 🤝'
 }
 document.querySelector('#meeting').innerHTML = message
+document.querySelector('#small-meeting').innerHTML = message
 
 const currentYear = document.querySelector("#current_year");
 currentYear.innerHTML = `${year}`;
