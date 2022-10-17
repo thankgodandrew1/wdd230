@@ -1,5 +1,6 @@
 @media only screen and (min-width:  35em) {
-	#logo {
+	
+    #logo {
 		display: flex;
 		flex-direction: row;
 	}
@@ -87,6 +88,15 @@
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
+    }
+    .navbar-wraper #meeting{
+        grid-row: 3/4;
+        grid-column: 1/5;
+        background-color: var(--primary-color);
+        margin: 0 -10px 0 -10px;
+        padding: 10px 10px;
+        font-size: 1.2em;
+        color: var(--accent3-color);
     }
     
 }

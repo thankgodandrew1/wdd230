@@ -16,6 +16,18 @@ const fulldate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(da
 datefield.innerHTML = `${fulldate}`
 console.log("${fulldate}")
 
+
+const dayOfWeek = date.getDay()
+
+let message;
+
+if (dayOfWeek >= 1  && dayOfWeek <=2) {
+    message = "🤝 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+}else{
+    message = 'Welcome 🤝'
+}
+document.querySelector('#meeting').innerHTML = message
+
 const currentYear = document.querySelector("#current_year");
 currentYear.innerHTML = `${year}`;
 
