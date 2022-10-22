@@ -58,6 +58,9 @@
     #temperature {
         font-size: 4em;
     }
+    .temperature{
+        font-size: 0.4rem;
+    }
     #event a img {
         min-width: 20.2em;
     }
