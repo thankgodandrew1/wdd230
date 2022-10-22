@@ -23,7 +23,7 @@
   <header>
     <nav class="navigation">
     <div class="navbar-wraper">                      
-    <img class="logo" src="./images/logo.png" alt="chamber logo">
+    <img class="logo" src="./images/logo.webp" alt="chamber logo">
     <a class="name" href="./index.html">
         <span class="chamberName">The Mountain</span>
         <br>
@@ -59,7 +59,11 @@
 <main>
 
     <div id="hero">
-        <img src="images/hero.jpg" alt="hero logo">
+        <picture>
+            <source srcset="images/hero_large.jpg" media="(min-width: 65em)">
+            <source srcset="images/hero_medium.jpg" media="(min-width: 35em)">
+          <img src="images/hero_small.jpg" alt="hero image">
+        </picture>
         <p>Don't think twice<br>Just do It!!</p>
         <a class="button">Join us</a>
     </div>
@@ -105,13 +109,17 @@
         </div>
         <div id="weather">
             <h2>Weather</h2>
-            <img src="images/cloudy.png" alt="cloudy weather icon">
+            <img class="weatherIcon" src="images/cloudy.png" alt="Weather Icon">
             <br>
-            <span id="temperature">28&deg;c</span>
+            <h3 class="temperature"><span id="temperature"></span></h3>
             <br>
-            <span id="sky"></span>Partly Cloudy
+            <h3 class="sky-condition"><span class="skyCondition"></span></h3>
+            <br>
+            <h4 class="feels-like"><span id="feelsLike"></span></h4>
             <br>    
-            <span id="temperatures">Day 29&deg; • Night 25&deg;</span>
+            <h4 class="wind-speed"><span id="windSpeed"></span></h4>
+            <br>
+            <h4 class="wind-chill"><span id="windChill"></span></h4>
         </div>
     </div>
 
@@ -119,7 +127,7 @@
 <footer>
   <div class="footer">
       <div id="logo">
-          <img src="images/logo.png" alt="chamber logo">
+          <img src="images/logo.webp" alt="chamber logo">
           <p>
               <b>The Mountain<br>
               Chamber of Commerce</b>
@@ -147,6 +155,7 @@
 </footer>
 </div>
   <script src="js/home.js"></script>
+  <script src="js/weather.js"></script>
 </body>
 
 </html>

@@ -37,7 +37,7 @@
 		display: none;
 	}
 	main {
-        margin: 20px 0 20px 0;
+        margin: 20px 20px 20px 0;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 1fr fit-content fit-content;
@@ -51,11 +51,13 @@
 
     #weather {
         margin-left: 5%;
+        margin-top: 3em;
     }
 
     #join {
         grid-row: 3/4;
         grid-column: 1/2;
+        margin-left: 5px;
     }
     #hero {
         grid-row: 1/2;

@@ -24,7 +24,7 @@ let message;
 if (dayOfWeek >= 1  && dayOfWeek <=2) {
     message = "🤝 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 }else{
-    message = 'Welcome 🤝'
+    message = ''
 }
 document.querySelector('#meeting').innerHTML = message
 document.querySelector('#small-meeting').innerHTML = message

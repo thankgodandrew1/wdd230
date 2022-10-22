@@ -33,7 +33,7 @@
         width: 96%;
     }
     #hero img {
-        width: 100%;
+        width: 105%;
         /* margin-left: 18px; */
         height: auto;
      }
@@ -57,9 +57,6 @@
     }
     #temperature {
         font-size: 4em;
-    }
-    #sky {
-        font-size: 3em;
     }
     #event a img {
         min-width: 20.2em;
@@ -99,7 +96,7 @@
         font-size: 1.2em;
         color: var(--accent3-color);
     }
-    #small-meeting{
+    #small-meeting{ 
         display: none;
     }
     
