@@ -13,6 +13,7 @@
     margin: 0 auto;
     max-width: 1900px;
 }
+
 body {
     font-family: 'Open Sans', 'Lato', 'Roboto';
     font-size: 16px;
@@ -83,7 +84,7 @@ main {
 	margin: 0 -10px 0 -10px;
 	padding: 10px 10px;
 	font-size: 1.3em;
-    color: var(--accent3-color);
+    color: #ffffff;
 }
 .navbar-wraper #meeting{
     display: none;
@@ -192,7 +193,7 @@ footer {
     padding: 5%;
     max-width: 100%;
     color: var(--accent3-color);
-    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #A51890;
+    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #232523;
  }
 
  .button {
@@ -269,14 +270,21 @@ footer {
     color: #0050A0;
  }
  .sky-condition {
-    margin-top: -1.5em;
+    margin-top: -1em;
     font-size: 1.62em;
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;    */
 }
 .wind-speed, .wind-chill, .feels-like{
     font-size: 1em;
     margin-top: -2em;
+    color: #000000;
+}
+.sky-condition{
+    margin-left: 30px;
+    margin-right: 30px;
 }
 .footer {
     display: flex;
@@ -304,9 +312,9 @@ footer {
     border-radius: 4em;
 }
 .footer1 {
-    margin-top: 2%;
+    /* margin-top: 2%;
     margin-left: -20px;
-    margin-right: -20px;
+    margin-right: -20px; */
     background-color: var(--primary-color);
 	color: var(--accent3-color);
 	font-family: var(--heading-font);
@@ -352,4 +360,51 @@ main h3 {
 
 main a h3:hover {
     background-color: var(--primary-color);
+}
+/* Style Section for Discover page */
+i{
+    font-size: 0.6em;
+}
+.discover{
+    margin: auto;
+    width: 90%; /*add */
+    text-align: center;
+    background-color: var(--accent3-color);
+    box-shadow: 0 5px 10px 5px;
+    padding: 4px;
+    margin-top: -50px;
+}
+.discover .image, a{
+    text-decoration: none;
+}
+.demographics{
+    display: block;
+    margin: 0 0 1em 0;
+    font-size: larger;
+    text-align: left;
+    list-style: circle;
+}
+.image{
+    display: block;
+    margin: auto;
+    text-align: left;
+    background-color: var(--accent3-color);
+    margin-top: 2.4em;
+    width: 90%;
+    padding-top: 0.2em;
+    padding-bottom: 1.5em;
+    box-shadow: 0 5px 10px 5px;
+    margin-bottom: 2em;
+}
+.image img{
+    display: block;
+    width: 100%;
+    padding: 3px 18px;
+    height: auto;
+    margin-top: 1em;
+}
+.image p{
+    font-size: 1.3em;
+    padding: 15px;
+    width: fit-content;
 }

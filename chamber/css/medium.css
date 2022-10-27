@@ -1,5 +1,4 @@
 @media only screen and (min-width:  35em) {
-	
     #logo {
 		display: flex;
 		flex-direction: row;
@@ -89,7 +88,7 @@
         flex-direction: row;
         flex-wrap:wrap;
     }
-    .navbar-wraper #meeting{
+   .navbar-wraper #meeting{
         display: block;
         grid-row: 3/4;
         grid-column: 1/5;
@@ -102,5 +101,13 @@
     #small-meeting{ 
         display: none;
     }
-    
+    /*Style section for Discover Page  */
+ .image{
+    display: flex;
+ }   
+
+ .image img{
+    padding: 30px;
+ }
+
 }

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 65em) {
 	main {
 		padding-top: 0;
-	}
+	}   
 	nav {
 		position: static;
 	}
@@ -40,7 +40,6 @@
         margin: 20px 20px 20px 0;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr fit-content fit-content;
     }
 
     #event-weather {
@@ -96,10 +95,9 @@
         grid-row: 2/4;
         grid-column: 2/3;
     }
-    #news {
-		background-color: none;
-	}
 	.footer1{
 		font-size: 12px;
 	}
-}
+    /* Style for Discover Page */
+    
+}   
