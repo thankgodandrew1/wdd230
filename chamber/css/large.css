@@ -1,5 +1,5 @@
 @media only screen and (min-width: 65em) {
-	main {
+    main {
 		padding-top: 0;
 	}   
 	nav {
@@ -99,5 +99,19 @@
 		font-size: 12px;
 	}
     /* Style for Discover Page */
-    
+  #discover-main{
+    margin: 0 auto;
+    padding: 0.60em;
+    max-width: 1000px;
+  }
+.discover{
+    width: 1000px;
+    margin-top: 10px;
+}
+.demographics{
+    font-size: 1.4em;
+}
+.image{
+    width: 95%;
+}
 }   

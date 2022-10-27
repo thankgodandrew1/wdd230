@@ -10,6 +10,12 @@ const date = new Date();
 console.log(date)
 const year = date.getFullYear();
 
+const currentYear = document.querySelector("#current_year");
+currentYear.textContent = year;
+
+let lastModif = (document.lastModified);
+document.getElementById("last_update").innerHTML = lastModif;
+
 const datefield = document.querySelector(".date");
 
 const fulldate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(date);
@@ -28,15 +34,3 @@ if (dayOfWeek >= 1  && dayOfWeek <=2) {
 }
 document.querySelector('#meeting').innerHTML = message
 document.querySelector('#small-meeting').innerHTML = message
-
-const currentYear = document.querySelector("#current_year");
-currentYear.innerHTML = `${year}`;
-
-// const timestamp = `Last Updated: ${document.lastModified}`;
-// document.querySelector(".lastMod").textContent = timestamp;
-
-
-//TO GET THE LAST MOODIFIED TIME USING JS
-// alert(document.lastModified);
-let lastModif = (document.lastModified);
-document.getElementById("last_update").innerHTML = lastModif;
