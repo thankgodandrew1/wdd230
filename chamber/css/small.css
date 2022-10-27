@@ -229,6 +229,9 @@ footer {
     background-color: var(--accent1-color);
     color: var(--accent3-color);
  }
+ #news p{
+    font-size: 1.1em;
+ }
  .ad .third {
    display: none;
  }
@@ -271,11 +274,9 @@ footer {
  }
  .sky-condition {
     margin-top: -1em;
-    font-size: 1.62em;
+    font-size: 1.4em;
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
-    /* border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;    */
 }
 .wind-speed, .wind-chill, .feels-like{
     font-size: 1em;
