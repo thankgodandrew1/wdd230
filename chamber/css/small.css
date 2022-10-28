@@ -374,7 +374,7 @@ i{
     background-color: var(--accent3-color);
     box-shadow: 0 5px 10px 5px;
     padding: 4px;
-    margin-top: -60px;
+    margin-top: -10px;
 }
 .discover .image, a{
     text-decoration: none;
@@ -386,6 +386,8 @@ i{
     font-size: larger;
     text-align: left;
     list-style: circle;
+    color: #000000;
+    /* font-family: var(--heading-font); */
 }
 .image{
     margin: auto;
@@ -409,6 +411,7 @@ i{
     font-size: 1.3em;
     padding: 15px;
     width: fit-content;
+    font-family: var(--paragraph-font);
 }
 .image img[data-src] {
     filter: blur(0.2em);
@@ -420,4 +423,19 @@ i{
   }                            
 .image .section h3{
     color: var(--primary-color);
+}
+.discover-p{
+    text-align: center;
+    margin-top: -70px;
+    padding: 20px;
+    font-size: 1.4em;
+    background-color: var(--accent3-color);
+    color: #000000;
+    border-radius: 2em;
+    box-shadow: 0 5px 23px 2px;
+    font-weight: 500;
+    margin-left: 9px;
+    margin-right: 9px;
+    font-family: var(--heading-font);
+    
 }
