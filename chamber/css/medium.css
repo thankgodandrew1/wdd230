@@ -110,8 +110,12 @@
      
  .image img{
     padding: 30px;
+    transition: 1s;
+
  }
-/* .discover-p{
-    text-indent: -15em;
-} */
-}
+ .image img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    opacity: 90%;
+ }
+ }
