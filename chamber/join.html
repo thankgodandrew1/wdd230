@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="ThankGod Andrew" >
+  <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" >
+  <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" >
+  <meta name="description"
+    content="Chamber of Commerce Join Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+  <link rel="stylesheet" href="css/small.css" >
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+    <title>Join</title>
+</head>
+<body class="body-join">
+    <div id="content">
+        <header class="header-join">
+            <nav class="navigation join-nav">
+                <div class="navbar-wraper">                      
+                <img class="logo" src="./images/logo.webp" alt="chamber logo">
+                <a class="name" href="./index.html">
+                    <span class="chamberName">The Mountain</span>
+                    <br>
+                    Chamber of commerce 
+                </a>
+                <ul>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="https://www.facebook.com/">
+                        <img src="./images/facebook-logo.png"  alt="facebook logo">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="./images/linkedin-logo.png"  alt="linkedin logo">
+                    </a>
+                </div>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>ⓧ</span></button>
+                <span class="date"></span>
+                <span id="meeting"></span>
+                </div>
+                <ul class="toggle">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header >
+        <main class="main-join">
+            <h2 class="join-header">Join The Mountain Chamber</h2>
+            <p class="fields">fields marked with * are compulsory</p>
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="info input">First Name*: <input type="text" name="fname" placeholder="John" required></label>
+                    <label class="info input">Last Name*: <input type="text"  name="lname" placeholder="Doe" required></label>
+                    <label class="info input">Email*: <input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                    <label class="info input">Phone*: <input type="tel" name="phone" placeholder="(000)-000-0000" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="info input">Business Name*: <input type="text" name="bname" placeholder="JD LTD" required></label>
+                    <label class="info input">Position/Title: <input type="text" pattern="[A-Za-z -]{7,}" name="title" placeholder="CEO"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Please Describe Your Business</legend>
+                    <label class="info bdesc"><textarea name="bdesc" cols="110" rows="10"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div class="level">Levels</div>
+                    <label class="info"><input type="radio" name="levels" value="np membershio"> NP Membership </label>
+                    <div>Full access member, free for non-profit organizations and there is no fee.</div>
+                    <label class="info"><input type="radio" name="levels" value="bronze membership"> Bronze Membership </label>
+                    <div>₦10,000/month Businesses wanting exposure, benefits includes becoming a member of the chamber commitee, business listing on chamber flyers and many more!</div>
+                    <label class="info"><input type="radio" name="levels" value="silver membership"> Silver Membership</label>
+                    <div>₦20,000/month For small businesses who are wanting to network more effectively, benefit includes business display on chamber spotlight and 1 reserved seat at the chamber annual conference.</div>
+                    <label class="info"><input type="radio" name="levels" value="gold membership"> Gold Membership</label>
+                     <div>₦30,000/month For businesses who are wanting to make meaningful connections, benefits includes 2 reserved seats at monthly Chamber breakfast meeting with top business and government officials, includes all Bronze and Silver level benefits.</div>
+                </fieldset>
+                <input type="hidden" name="submitDate" id="submitDate">
+                <label><input type="submit" name="submitBtn" value="Join the Chamber" class="submitBtn"></label> 
+            </form>
+        </main>
+        <footer>
+            <div class="footer">
+                <div id="logo">
+                    <img src="images/logo.webp" alt="chamber logo">
+                    <p>
+                        <b>The Mountain<br>
+                        Chamber of Commerce</b>
+                        <br>
+                        7 Borden Street Off GeOff<br>
+                        TMCC, 512109</p>
+                </div>
+                <div id="chamber-map">
+                    info@tmcc.org
+                    <br>
+                    +234 (902)-9919-743
+                    <br>
+                    <a href="https://maps.app.goo.gl/oeHFmLJuRKbcZKfXA" target="_blank">
+                        📌 Location pin</a>
+                    <br>
+                </div>
+            </div>
+            <div class="footer1">
+              <h1>
+                  &copy; <span id="current_year"></span> Mountain Chamber .:|:. ThankGod Andrew .:|:. WDD 230 Project .:|:. Last
+                  Updated: <span id="last_update"></span>
+                </h1>
+            </div>
+        </footer>
+    </div>
+    <script src="js/home.js"></script>
+</body>
+</html>

@@ -111,11 +111,15 @@
  .image img{
     padding: 30px;
     transition: 1s;
-
  }
  .image img:hover{
     transform: scale(1.1);
     z-index: 2;
     opacity: 90%;
  }
- }
+ 
+ /* --------STYLING SECTION FOR JOIN PAGE---------- */
+ .fields{
+    font-size: 1.4rem;
+}
+}

@@ -117,4 +117,53 @@
 .discover-p{
     margin-top: 20px;
 }
-}   
+   
+/* --------JOIN PAGE STYLING SECTION */
+.main-join{
+    margin: auto;
+    max-width: 65em;
+    margin-bottom: 30px;
+}
+form label.info{
+    padding: 2px;
+}
+form label.info{
+    padding: .4rem 0;
+}
+.join-header{
+    margin-top: 20px;
+    font-size: 2.9em;
+}
+.fields{
+    text-align: left;
+    padding-left: 2%;
+}
+form label.input input{
+    width: 100%;
+}
+form div{
+    font-size: .9em;
+    margin-top: -9px;
+}
+form .level{
+    margin-top: .7em;
+}
+.thanks{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+.main-thanks{
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+}
+.t-para{
+    padding-bottom: 5em;
+    font-size: 2em;
+}
+.t-head{
+    font-size: 3em;
+    padding-bottom: 1%;
+}
+}
