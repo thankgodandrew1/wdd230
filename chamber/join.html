@@ -56,7 +56,7 @@
         <main class="main-join">
             <h2 class="join-header">Join The Mountain Chamber</h2>
             <p class="fields">fields marked with * are compulsory</p>
-            <form action="thankyou.html" target="_blank" method="get">
+            <form action="thankyou.html" method="get">
                 <fieldset>
                     <legend>Applicant Information</legend>
                     <label class="info input">First Name*: <input type="text" name="fname" placeholder="John" required></label>
@@ -67,7 +67,8 @@
                 <fieldset>
                     <legend>Business Information</legend>
                     <label class="info input">Business Name*: <input type="text" name="bname" placeholder="JD LTD" required></label>
-                    <label class="info input">Position/Title: <input type="text" pattern="[A-Za-z -]{7,}" name="title" placeholder="CEO"></label>
+                    <label class="info input">Position/Title: <input type="text" pattern="[A-Za-z -]{7,}" name="title" placeholder="Chief Executive Officer"></label>
+                    <div>Minimum length should be 7 letters</div>
                 </fieldset>
                 <fieldset>
                     <legend>Please Describe Your Business</legend>
