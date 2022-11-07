@@ -1,5 +1,5 @@
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=23&lon=-2.15&appid=a2812664bebf2b97b52c7942dbdeb2ed&units=metric";
-console.log(url)
+// console.log(url)
 async function getWeather(url) {
     const response = await fetch(url);
     const data = await response.json();
