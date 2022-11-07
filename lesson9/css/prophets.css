@@ -45,7 +45,7 @@ section{
     background-color: #6c8ccf42;
     border-radius: 10px;
     box-shadow:  0 0 5px navy;
-    transition: 2s;
+    transition: .4s;
 }
 section:hover{
     opacity: 80%;
