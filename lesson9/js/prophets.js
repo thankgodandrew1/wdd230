@@ -47,16 +47,16 @@ function displayProphets(prophet){
     document.querySelector('div.cards').appendChild(card);
 };
 function ordinal(value){
-    var str = String(value),
+    let str = String(value),
     len = str.length,
     end  = str.substring(len - 1, 1),
-    teen = len > 1 && str.substring(len - 2, 1) === "1",
+    bool = len > 1 && str.substring(len - 2, 1) === "1",
     dOrdinal = "th";
-  if (end === "1" && !teen) {
+  if (end === "1" && !bool) {
     dOrdinal = "st";
-  } else if (end === "2" && !teen) {
+  } else if (end === "2" && !bool) {
     dOrdinal = "nd";
-  } else if (end === "3" && !teen) {
+  } else if (end === "3" && !bool) {
     dOrdinal = "rd";
   }
   return dOrdinal;
