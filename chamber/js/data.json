@@ -1,0 +1,93 @@
+{
+    "directory": [
+        {
+            "names": "DANGOTE GROUP",
+            "address": "Union Marble House, 1 Alfred Rewane Rd, Ikoyi 106104, Lagos",
+            "phonenumber": "9035344",
+            "email": "dangotegroup@gmil.com",
+            "websiteurl": "https://dangote.com",
+            "imagepath": "images/dangote.jpg",
+            "level": "Gold Membership"
+        },
+        {
+            "names" : "MTN",
+            "address" : "4 Aromire Street Off Kingsway Road, Ikoyi, Lagos",
+            "phonenumber": "59493222",
+            "websiteurl": "https://mtnonline.com/PO",
+            "imagepath": "images/mtn.jpg",
+            "level": "Gold Membership"
+        },
+        {
+            "names": "ZENITH BANK PLC",
+            "address": "Aromire Rd, Ikoyi 106104, Lagos",
+            "phonenumber": "01-278-7000",
+            "websiteurl": "https://zenithbank.com",
+            "imagepath": "images/zenith.jpg",
+            "level": "Gold Membership"
+        },
+        {
+            "names": "MCDONALD'S",
+            "address" : "Eti o sa, Admirity way, 38 Shaikiru Anjorin St, Lekki Phase 1 106104, Lekki, Lagos",
+            "phonenumber": "0904-916-0063",
+            "websiteurl": "https://mcdonalds.com",
+            "imagepath": "images/mcdonalds.jpg",
+            "level": "Silver Membership"
+        },
+        {
+            "names": "OANDO PLC",
+            "address": "The Wings Complex, 17a Ozumba Mbadiwe Ave, Victoria Island, Lagos",
+            "phonenumber": "01-270-2400",
+            "websiteurl": "https://oandoplc.com",
+            "imagepath": "images/oando.png",
+            "level": "Gold Membership"
+        },
+        {
+            "names": "BHARTI AIRTEL",
+            "address": "Nelle Mal l, Admiralty Way, Lekki Phase 1, 106104 Lekki, Lagos",
+            "phonenumber": "901-837-4536",
+            "websiteurl": "https://airtel.com.ng",
+            "imagepath": "images/airtel.jpg",
+            "level" : "Bronze Membership"
+        },
+        {
+            "names": "SEPLAT PETROLEUM DEVELOPMENT COMPANY",
+            "address": "16A Olu Holloway Rd, Ikoyi 1061, Lagos",
+            "phonenumber": "01-277-0400",
+            "websiteurl": "https://seplatenergy.com",
+            "imagepath": "images/seplat.jpg",
+            "level": "Gold Membership"
+        },
+        {
+            "names": "HOPE 4 SURE FOUNDATION",
+            "address": "South West, 98 Awolowo Rd, Ikoyi Lagos",
+            "phonenumber": "803-601-3900",
+            "websiteurl": "https://hope4surefoundation.com",
+            "imagepath": "images/hope.jpg",
+            "level": "NP Membership"
+        },
+        {
+            "names": "NESTLE NIGERIA PLC",
+            "address": "22/24 Ilupeju 102215, Lagos",
+            "phonenumber": "912-973-0350",
+            "websiteurl": "https://nestle.com",
+            "imagepath": "images/nestle.png",
+            "level": "Bronze Membership"
+        },
+        {
+            "names": "UNICEF",
+            "address": "14A Lugard Ave, Ikoyi 106104, Lagos",
+            "phonenumber": "01-461-5644",
+            "websiteurl": "https://unicef.org",
+            "imagepath": "images/unicef.png",
+            "level": "NP Membership"
+        },
+        {
+            "names": "JULIUS BERGER",
+            "address": "Ijora Cause Way, Ikoyi 106104, Lagos",
+            "phonenumber": "01-801-1404",
+            "websiteurl": "https://julius-berger.com",
+            "imagepath": "images/julius.png",
+            "level": "Silver Membership" 
+        }
+    ]
+}
