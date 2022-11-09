@@ -4,7 +4,7 @@
             "name": "DANGOTE GROUP",
             "address": "Union Marble House, 1 Alfred Rewane Rd, Ikoyi 106104, Lagos",
             "phonenumber": "9035344",
-            "websiteurl": "https://dangote.com",
+            "websiteurl": "https://www.dangote.com/",
             "imagepath": "images/dangote.webp",
             "level": "Gold Membership"
         },
@@ -12,7 +12,7 @@
             "name" : "MTN",
             "address" : "4 Aromire Street Off Kingsway Road, Ikoyi, Lagos",
             "phonenumber": "59493222",
-            "websiteurl": "https://mtnonline.com/PO",
+            "websiteurl": "https://www.mtnonline.com/PO/",
             "imagepath": "images/mtn.webp",
             "level": "Gold Membership"
         },
@@ -20,7 +20,7 @@
             "name": "ZENITH BANK PLC",
             "address": "Aromire Rd, Ikoyi 106104, Lagos",
             "phonenumber": "01-278-7000",
-            "websiteurl": "https://zenithbank.com",
+            "websiteurl": "https://www.zenithbank.com/",
             "imagepath": "images/zenith.webp",
             "level": "Gold Membership"
         },
@@ -28,7 +28,7 @@
             "name": "MCDONALD'S",
             "address" : "Eti o sa, Admirity way, 38 Shaikiru Anjorin St, Lekki Phase 1 106104, Lekki, Lagos",
             "phonenumber": "0904-916-0063",
-            "websiteurl": "https://mcdonalds.com",
+            "websiteurl": "https://www.mcdonalds.com/",
             "imagepath": "images/mcdonalds.webp",
             "level": "Silver Membership"
         },
@@ -36,7 +36,7 @@
             "name": "OANDO PLC",
             "address": "The Wings Complex, 17a Ozumba Mbadiwe Ave, Victoria Island, Lagos",
             "phonenumber": "01-270-2400",
-            "websiteurl": "https://oandoplc.com",
+            "websiteurl": "https://www.oandoplc.com/",
             "imagepath": "images/oando.webp",
             "level": "Gold Membership"
         },
@@ -44,7 +44,7 @@
             "name": "BHARTI AIRTEL",
             "address": "Nelle Mal l, Admiralty Way, Lekki Phase 1, 106104 Lekki, Lagos",
             "phonenumber": "901-837-4536",
-            "websiteurl": "https://airtel.com.ng",
+            "websiteurl": "https://www.airtel.com.ng/",
             "imagepath": "images/airtel.webp",
             "level" : "Bronze Membership"
         },
@@ -52,7 +52,7 @@
             "name": "SEPLAT PETROLEUM DEVELOPMENT COMPANY",
             "address": "16A Olu Holloway Rd, Ikoyi 1061, Lagos",
             "phonenumber": "01-277-0400",
-            "websiteurl": "https://seplatenergy.com",
+            "websiteurl": "https://www.seplatenergy.com/",
             "imagepath": "images/seplat.webp",
             "level": "Gold Membership"
         },
@@ -60,7 +60,7 @@
             "name": "HOPE 4 SURE FOUNDATION",
             "address": "South West, 98 Awolowo Rd, Ikoyi Lagos",
             "phonenumber": "803-601-3900",
-            "websiteurl": "https://hope4surefoundation.com",
+            "websiteurl": "https://www.hope4surefoundation.com/",
             "imagepath": "images/hope.webp",
             "level": "NP Membership"
         },
@@ -68,7 +68,7 @@
             "name": "NESTLE NIGERIA PLC",
             "address": "22/24 Ilupeju 102215, Lagos",
             "phonenumber": "912-973-0350",
-            "websiteurl": "https://nestle.com",
+            "websiteurl": "https://www.nestle.com/",
             "imagepath": "images/nestle.webp",
             "level": "Bronze Membership"
         },
@@ -76,7 +76,7 @@
             "name": "UNICEF",
             "address": "14A Lugard Ave, Ikoyi 106104, Lagos",
             "phonenumber": "01-461-5644",
-            "websiteurl": "https://unicef.org",
+            "websiteurl": "https://www.unicef.org/",
             "imagepath": "images/unicef.webp",
             "level": "NP Membership"
         },
@@ -84,7 +84,7 @@
             "name": "JULIUS BERGER",
             "address": "Ijora Cause Way, Ikoyi 106104, Lagos",
             "phonenumber": "01-801-1404",
-            "websiteurl": "https://julius-berger.com",
+            "websiteurl": "https://www.julius-berger.com/",
             "imagepath": "images/julius.webp",
             "level": "Silver Membership" 
         },
@@ -92,7 +92,7 @@
             "name": "BUA GROUP",
             "address": "32 Churchgate St, Victoria Island 106104, Lagos",
             "phonenumber": "01-801-1404",
-            "websiteurl": "https://buagroup.com",
+            "websiteurl": "https://www.buagroup.com/",
             "imagepath": "images/bua.webp",
             "level": "Silver Membership" 
         }
