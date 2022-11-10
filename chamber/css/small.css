@@ -58,7 +58,6 @@ img{
 .navbar-wraper .name .chamberName{
 	font-size: 1.3em;
 }
-
 .navbar-wraper .socials {
 	margin-top: 24px;
 	grid-row: 1/2;
@@ -580,10 +579,10 @@ form input.submitBtn:hover{
     box-shadow: 0 0 20px navy;
 }
 .list section:nth-child(odd){
-    background-color: var(--accent3-color);
+    background-color: #eee;
 }
 .list section:nth-child(even){
-    background-color: #ddd;
+    background-color: #ccc;
 }
 .directory section p{
     color: var(--primary-color);
