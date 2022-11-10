@@ -1,4 +1,4 @@
-const api = "https://thankgodandrew1.github.io/wdd230/chamber/json/data.json",
+const api = "https://thankgodandrew1.github.io/wdd230/chamber/js/json/data.json",
 businessCards = document.querySelector(".directory");
 
 fetch(api)
