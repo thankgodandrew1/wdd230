@@ -6,7 +6,7 @@ fetch(requestURL)
         return response.json();
     }) 
     .then(function (jsonObject) {
-        console.table(jsonObject); //Temporary checking for valid response and data parsing
+        // console.table(jsonObject); //Temporary checking for valid response and data parsing
         const prophets = jsonObject['prophets'];
         prophets.forEach(displayProphets);
         // prophets.forEach(ordinalNumbers)

@@ -5,16 +5,15 @@
     --heading-font: 'Open Sans';
     --paragraph-font: 'Lato';
 }
-div{
+.cards{
     display: grid;
     grid-template-columns: 1fr;
     background-color: #1c56d342;
     border-radius: 20px;
     margin: auto;
     max-width: 1200px;
-    box-shadow:  0 0 35px navy;;
-
-}
+    box-shadow:  0 0 35px navy;
+}        
 img{
     display: block;
     margin-left: auto;
@@ -64,7 +63,7 @@ footer h1{
     color: #0050A0;
 }
 @media only screen and (min-width: 35em){
-  div{
+  .cards{
     grid-template-columns: repeat(3, 1fr);
   }   
   footer h1{
@@ -72,7 +71,7 @@ footer h1{
   }
 }
 @media only screen and (min-width: 65em){
-    div{
+    .cards{
         grid-template-columns: repeat(4, 1fr);       
     }
 }

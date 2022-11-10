@@ -122,4 +122,18 @@
  .fields{
     font-size: 1.4rem;
 }
+/* -----------STYLING FOR DIRECTORY PAGE */
+.directory{
+    grid-template-columns: repeat(3, 1fr);
+}
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+.list section > *{
+    text-align: left;
+}
+.list section p{
+    font-size: 1.2em;
+}
 }

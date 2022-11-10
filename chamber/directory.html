@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="ThankGod Andrew" >
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" >
+    <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" >
+    <meta name="description"
+      content="Chamber of Commerce Directory Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+    <script src="https://kit.fontawesome.com/ebcf57f900.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/small.css" >
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Font Awesome CDN link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Directory</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <nav class="navigation join-nav">
+            <div class="navbar-wraper">                      
+            <img class="logo" src="./images/logo.webp" alt="chamber logo">
+            <a class="name" href="./index.html">
+                <span class="chamberName">The Mountain</span>
+                <br>
+                Chamber of commerce 
+            </a>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://www.facebook.com/">
+                    <img src="./images/facebook-logo.png"  alt="facebook logo">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="./images/linkedin-logo.png"  alt="linkedin logo">
+                </a>
+            </div>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>ⓧ</span></button>
+            <span class="date"></span>
+            <span id="meeting"></span>
+            </div>
+            <ul class="toggle">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main class="main-directory">
+            <div class="menu">
+                <h1>
+                    Business Directory
+                </h1>
+                <button id="grid"><i class="fa-solid fa-table-cells-large"> Grid View</i></button>
+                <button id="list"><i class="fa-solid fa-list"> List View</i></button>
+            </div>
+            <div class="directory"></div>
+        </main>
+        <footer>
+            <div class="footer">
+                <div id="logo">
+                    <img src="images/logo.webp" alt="chamber logo">
+                    <p>
+                        <b>The Mountain<br>
+                        Chamber of Commerce</b>
+                        <br>
+                        7 Borden Street Off GeOff<br>
+                        TMCC, 512109</p>
+                </div>
+                <div id="chamber-map">
+                    info@tmcc.org
+                    <br>
+                    +234 (902)-9919-743
+                    <br>
+                    <a href="https://maps.app.goo.gl/oeHFmLJuRKbcZKfXA" target="_blank">
+                        📌 Location pin</a>
+                    <br>
+                </div>
+            </div>
+            <div class="footer1">
+              <h1>
+                  &copy; <span id="current_year"></span> Mountain Chamber .:|:. ThankGod Andrew .:|:. WDD 230 Project .:|:. Last
+                  Updated: <span id="last_update"></span>
+                </h1>
+            </div>
+          </footer>
+          </div>
+            <script src="js/greet.js"></script>    
+            <script src="js/home.js"></script>
+            <script src="js/directory.js"></script>
+          </body>
+          </html>
