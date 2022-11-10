@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap');
-
 :root {
     --primary-color: #0050A0;
     --secondary-color: #E5002B;
@@ -13,7 +11,6 @@
     margin: 0 auto;
     max-width: 1900px;
 }
-
 body {
     font-family: 'Open Sans', 'Lato', 'Roboto';
     font-size: 16px;
@@ -21,7 +18,6 @@ body {
     line-height: 1.5;
     padding: 0;
     color: #232523;
-    /* overflow: visible; */
 }
 img{
     box-sizing: border-box;
@@ -316,9 +312,6 @@ footer {
     border-radius: 4em;
 }
 .footer1 {
-    /* margin-top: 2%;
-    margin-left: -20px;
-    margin-right: -20px; */
     background-color: var(--primary-color);
 	color: var(--accent3-color);
 	font-family: var(--heading-font);
@@ -559,6 +552,7 @@ form input.submitBtn:hover{
 }
 .t-head{
     margin-top: -10em;
+    color: var(--primary-color);
 }
 /* -------DIRECTORY PAGE SECTION--------- */
 .directory{    
@@ -589,19 +583,18 @@ form input.submitBtn:hover{
     background-color: var(--accent3-color);
 }
 .list section:nth-child(even){
-    background-color: #ccc;
+    background-color: #ddd;
 }
 .directory section p{
     color: var(--primary-color);
-    max-width: 0 auto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.4em;
     padding: 1px;
     margin: .5em;    
 }
 .directory section a{
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 700;
     color: #000000;
     display: block;
     padding: 20px;
