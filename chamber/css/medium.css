@@ -133,6 +133,10 @@
     text-align: left;
 }
 .list section p{
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
+.list section{
+    align-items: center;
+}
+
 }

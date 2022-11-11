@@ -642,7 +642,7 @@ form input.submitBtn:hover{
 
 .list section {
 	display: flex;
-	align-items: center;
+    text-align: left;
 }
 
 .grid section {
@@ -664,4 +664,11 @@ form input.submitBtn:hover{
 }
 .list section > *{
 	margin: 0 1rem;
+}
+.list section a{
+    padding: 0;
+    padding-bottom: 7px;
+}
+.list section p, a{
+    font-size: 1em;
 }
