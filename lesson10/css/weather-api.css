@@ -1,0 +1,28 @@
+*{
+    text-align: center;
+    background-color: bisque;
+}
+p{
+    font-weight: bold;
+    font-size: 1.3em;
+    font-style: oblique;
+}
+h1, h2{
+    background-color: burlywood;
+    margin: 1em;
+    border-radius: 10px;
+    padding: 10px;
+}
+figcaption{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+img{
+    background-color: burlywood;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    background-color: burlywood;
+}
