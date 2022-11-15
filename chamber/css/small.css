@@ -326,6 +326,13 @@ footer {
     text-decoration: none;
     font-size: 1.3em;
  }
+ .weather-source a{
+    color: white;
+    text-decoration: underline;
+    font-size: 1.3em;
+    display: block;
+    padding-bottom: 30px;
+ }
 main p {
     font-family: var(--paragraph-font);
     color: #0050A0;
