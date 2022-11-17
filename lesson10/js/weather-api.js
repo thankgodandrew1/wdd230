@@ -1,13 +1,17 @@
-const icon = document.querySelector("#weather-icon"),
-desc = document.querySelector("figcaption"),
-temperature = document.querySelector("#current-temp"),
-windSpeed = document.querySelector("#windSpeed"),
-windChill = document.querySelector("#windChill"),
-h1 = document.querySelector('h1'),
-h2 = document.querySelector('h2'),
+let h1 = document.createElement('h1'),
+anchor = document.createElement('a'),
+h2 = document.createElement('h2'),
+figure = document.createElement('figure'),
+temperature = document.createElement('p'),
+windSpeed = document.createElement('p'),
+windChill = document.createElement('p'),
+icon = document.createElement('img'),
+desc = document.createElement('figcaption'),
+section = document.createElement('section');
+const weatherDiv = document.querySelector('main')
 
 
-url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks,US&appid=a2812664bebf2b97b52c7942dbdeb2ed&units=imperial";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks,US&appid=a2812664bebf2b97b52c7942dbdeb2ed&units=imperial";
 
 async function apiFetch(url) {
     try{
@@ -30,7 +34,7 @@ function getWeatherIcon(){
     let icon_url = `https://openweathermap.org/img/wn/${results.weather[0].icon}@2x.png`;
     return icon_url;
 };
-
+        
 function displayResults(weatherData) {
     results = weatherData;
     temperature.innerHTML = `<strong>The current temperature in Fairbanks, Alaska is ${results.main.temp.toFixed(0)}&deg;F</strong>`;
@@ -40,6 +44,24 @@ function displayResults(weatherData) {
     desc.textContent = `${dDesc.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())}`;
     icon.setAttribute('src', getWeatherIcon())
     icon.setAttribute('alt', dDesc)
+    anchor.setAttribute('href', `https://openweathermap.org`)
+    anchor.setAttribute('target', `_blank`)
+    anchor.textContent = `OpenWeather.org`
+    h1.textContent = ` API Test `
+    h1.appendChild(anchor)
+    h2.textContent = `Current Condition Icon`
+    figure.appendChild(icon)
+    figure.appendChild(desc)
+
+    section.appendChild(h1)
+    section.appendChild(temperature)
+    section.appendChild(windSpeed)
+    section.appendChild(windChill)
+    section.appendChild(h2)
+    section.appendChild(figure)
+
+    weatherDiv.appendChild(section)
+    
 };
 
 function calcWindChill(t, s) {
