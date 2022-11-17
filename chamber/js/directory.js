@@ -8,7 +8,7 @@ fetch(api)
     .then(function (jsonObject) {
         const companies = jsonObject["company"]
         companies.forEach(displayCompanies);
-    })
+    })  
 function displayCompanies(company){
     let card = document.createElement('section');
     let name = document.createElement('h3')

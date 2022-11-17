@@ -168,7 +168,7 @@ form .level{
 }
 /* -------DIRECTORY PAGE SECTION--------- */
 .directory{
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .directory section p{
     font-size: 1.5em;
