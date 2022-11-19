@@ -264,7 +264,10 @@ footer {
     background: var(--accent3-color);
     border-radius: 2em;
  }
-
+.weatherIcon{
+    background-color: var(--primary-color);
+    border-radius: 1.2em;
+}
  .temperature{
     font-size: 1.5rem;
     font-family: var(--paragraph-font);
