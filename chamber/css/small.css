@@ -38,7 +38,6 @@ img{
 }
 
 .navbar-wraper .logo {
-	margin-top: 12px;
 	grid-row: 1/2;
 	grid-column: 1/2;
 }
@@ -47,6 +46,7 @@ img{
     width: 50px;
     height: 50px;
     box-shadow: 5px 5px 10px #232523 ;
+    margin-left: -10.9px;
 }
 
 .navbar-wraper .name {
@@ -187,8 +187,8 @@ footer {
     font-size: 1.8em;
     padding: 5%;
     max-width: 100%;
-    color: var(--accent3-color);
-    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #A51890;
+    color: rgba(0, 0, 0, 0.9);
+    text-shadow:1px 1px 2px #A51890, 1px 1px 10px #4d4e50 ;
  }
 
  .button {
