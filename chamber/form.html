@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/medium.css">
   <link rel="stylesheet" href="css/large.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap">
-    <title>Join</title>
+    <title>Thanks</title>
 </head>
 <body class="body-join">
     <div id="content">
@@ -55,42 +55,11 @@
                 </ul>
             </nav>
         </header >
-        <main class="main-join">
-            <h2 class="join-header">Join The Mountain Chamber</h2>
-            <p class="fields">fields marked with * are compulsory</p>
-            <form action="thankyou.html" method="get">
-                <fieldset>
-                    <legend>Applicant Information</legend>
-                    <label class="info input">First Name*: <input type="text" name="fname" placeholder="John" required></label>
-                    <label class="info input">Last Name*: <input type="text"  name="lname" placeholder="Doe" required></label>
-                    <label class="info input">Email*: <input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
-                    <label class="info input">Phone*: <input type="tel" name="phone" placeholder="(000)-000-0000" required></label>
-                </fieldset>
-                <fieldset>
-                    <legend>Business Information</legend>
-                    <label class="info input">Business Name*: <input type="text" name="bname" placeholder="JD LTD" required></label>
-                    <label class="info input">Position/Title: <input type="text" pattern="[A-Za-z -]{7,}" name="title" placeholder="Chief Executive Officer"></label>
-                    <div>Minimum length should be 7 characters</div>
-                </fieldset>
-                <fieldset>
-                    <legend>Please Describe Your Business</legend>
-                    <label class="info bdesc">Business Description:<textarea name="bdesc" cols="110" rows="10"></textarea></label>
-                </fieldset>
-                <fieldset>
-                    <legend>Membership Level</legend>
-                    <div class="level">Levels</div>
-                    <label class="info"><input type="radio" name="levels" value="np membershio"> NP Membership </label>
-                    <div>Full access member, free for non-profit organizations and there is no fee.</div>
-                    <label class="info"><input type="radio" name="levels" value="bronze membership"> Bronze Membership </label>
-                    <div>₦10,000/month Businesses wanting exposure, benefits includes becoming a member of the chamber commitee, business listing on chamber flyers and many more!</div>
-                    <label class="info"><input type="radio" name="levels" value="silver membership"> Silver Membership</label>
-                    <div>₦20,000/month For small businesses who are wanting to network more effectively, benefit includes business display on chamber spotlight and 1 reserved seat at the chamber annual conference.</div>
-                    <label class="info"><input type="radio" name="levels" value="gold membership"> Gold Membership</label>
-                     <div>₦30,000/month For businesses who are wanting to make meaningful connections, benefits includes 2 reserved seats at monthly Chamber breakfast meeting with top business and government officials, includes all Bronze and Silver level benefits.</div>
-                </fieldset>
-                <input type="hidden" name="submitDate" id="submitDate">
-                <label><input type="submit" name="submitBtn" value="Join the Chamber" class="submitBtn"></label> 
-            </form>
+        <main class="main-thanks">
+            <div class="thanks-flex">
+                <h1 class="thanks t-head">Chamber Membership Application</h1>
+                <p class="thanks t-para">You've submitted a contact form. We will get back to you shortly!</p>
+            </div>
         </main>
         <footer>
             <div class="footer">
@@ -121,7 +90,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/greet.js"></script>
     <script src="js/home.js"></script>
 </body>
 </html>

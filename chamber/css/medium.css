@@ -138,5 +138,26 @@
 .list section{
     align-items: center;
 }
+#cards{
+    display: flex;
+    margin: 3em;
+}
+#cards section{
+    margin: 3em;
+}
+.close{
+    right: 25px;
+    top: 0;
+}
 
+.form-content .cancelbtn {
+    width: auto;
+}
+.class{
+    flex-direction: row;
+    gap: 50px;
+}
+.label-flex{
+    width: 110%;
+  }
 }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="ThankGod Andrew" >
+  <link rel="icon" type="image/png" href="../favicomatic/favicon-32x32.png" sizes="32x32" >
+  <link rel="icon" type="image/png" href="../favicomatic/favicon-16x16.png" sizes="16x16" >
+  <meta name="description"
+    content="Chamber of Commerce Join Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+  <link rel="stylesheet" href="css/small.css" >
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap">
+    <title>Contact Us</title>
+</head>
+<body class="body-join">
+    <div id="content">
+        <header class="header-join">
+            <nav class="navigation join-nav">
+                <div class="navbar-wraper">                      
+                    <a href="index.html"><img class="logo" src="./images/logo.webp" alt="chamber logo"></a>
+                    <a class="name" href="./index.html">
+                        <span class="chamberName">The Mountain</span>
+                        <br>
+                        Chamber of commerce 
+                    </a>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/">
+                            <img src="./images/facebook-logo.png"  alt="facebook logo">
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <img src="./images/linkedin-logo.png"  alt="linkedin logo">
+                        </a>
+                    </div>
+                    <button id="hamburgerBtn"><span>&#9776;</span><span>ⓧ</span></button>
+                    <span class="date"></span>
+                    <span id="meeting"></span>
+                </div>
+                <ul class="toggle">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header >
+        <main class="contact-main">
+            <h1>
+                Contact the Mountain Chamber of Commerce
+            </h1>
+            <div id="cards">
+                <section>
+                    <h2>I have a technical question</h2>
+                    <p>If you're already a member, the fastest way to get help is through our support ticketing system</p>
+                    <button onclick="document.getElementById('support').style.display='block'">Create a Support Ticket</button>
+                </section>
+                <section>
+                    <h2>I have a basic question</h2>
+                    <p>Have a general question about how our site/services works?</p>
+                    <button onclick="document.getElementById('form').style.display='block'">Complete a Form</button>
+                </section>
+            </div>
+            <hr>
+            <div class="points-of-contact">
+                <h1>TMCC Contacts</h1><hr>
+                <p>ThankGod Andrew <br> President <br>(902) 991-9743<br>thankgodandrew663@gmail.com</p>
+                 
+                <p>General Information <br>(902) 991-9743 <br> info@tmcc.org</p>
+            </div>
+            <div id="support" class="support-form animate">
+                <form class="form-content" action="ticket.html" method="get">
+                    <div class="text-container">
+                        <span onclick="document.getElementById('support').style.display='none'"
+                        class="close" title="Close Ticket">&times;</span>
+                        <h2>TMCC Support Ticket</h2>
+                    </div>
+                    <p class="comp-para">Fields with * are required</p>
+                    <div class="container">
+                        <label class="info"><b>First Name*</b><input type="text" name="fname" placeholder="John" required></label>
+                        <label class="info"><b>Last Name*</b><input type="text" name="lname" placeholder="Doe" required></label>
+                        <label class="info"><b>Email*</b><input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                        <label class="info"><b>Subject:</b><input type="text" name="subject"></label>
+                        <label class="info"><b>Please Describe the Problem*</b><textarea name="text" rows="4" placeholder="Please enter your question or the description of the problem you're trying to solve." required></textarea></label>
+                        <button type="submit">Create a Ticket</button>
+                    </div>
+                    <div class="container">
+                        <button type="button" class="cancelbtn" onclick="document.getElementById('support').style.display='none'">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            <div id="form" class="support-form animate">
+                <form action="form.html" method="get" class="form-content">
+                    <div class="text-container">
+                        <span onclick="document.getElementById('form').style.display='none'"
+                        class="close" title="Close Form">&times;</span>
+                        <h2>TMCC Contact Form</h2>
+                    </div>
+                    <p class="comp-para">Fields with * are required</p>
+                    <div class="container">
+                        <label class="info"><b>Name*</b><input type="text" name="fname" placeholder="John Doe" required></label>
+                        <label class="info"><b>Organization</b><input type="text" name="organization" placeholder="Company, Inc."></label>
+                        <label class="info"><b>Email*</b><input type="email" name="email" placeholder="johndoe@gmail.com" required></label>
+                       <div class="class">
+                            <label class="label-flex"><b>Phone</b><input type="tel" name="phone" placeholder="(000) 000-0000"></label>
+                            <label class="label-flex"><b>Contact Prefrence*</b><select name="preference" id="prefered">
+                            <option value="">Choose...</option>
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                        </select></label>
+                    </div>
+                    <div class="class">
+                        <label class="label-flex"><b>City</b><input type="text" name="City" placeholder="Ikoyi"></label>
+                        <label class="label-flex"><b>State</b><input type="text" name="State" placeholder="LG"></label>
+                        <label class="label-flex"><b>Postal Code</b><input type="text" name="Postal" placeholder="106104"></label>
+                    </div>    
+                        <label class="info"><b>Comments/Questions*</b><textarea name="text" rows="4" placeholder="Please enter your question or the description of the problem you're trying to solve." required></textarea></label>
+                        <button type="submit">Submit Your Contact Form</button>
+                    </div>
+                    <div class="container">
+                        <button type="button" class="cancelbtn" onclick="document.getElementById('form').style.display='none'">Cancel</button>
+                    </div>
+                </form>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="footer">
+                <div id="logo">
+                    <a href="index.html"><img src="images/logo.webp" alt="chamber logo"></a>
+                    <p>
+                        <b>The Mountain<br>
+                        Chamber of Commerce</b>
+                        <br>
+                        7 Borden Street Off GeOff<br>
+                        TMCC, 512109</p>
+                </div>
+                <div id="chamber-map">
+                    info@tmcc.org
+                    <br>
+                    +234 (902)-9919-743
+                    <br>
+                    <a href="https://maps.app.goo.gl/oeHFmLJuRKbcZKfXA" target="_blank">
+                        📌 Location pin</a>
+                    <br>
+                </div>
+            </div>
+            <div class="footer1">
+              <h1>
+                  &copy; <span id="current_year"></span> Mountain Chamber .:|:. ThankGod Andrew .:|:. WDD 230 Project .:|:. Last
+                  Updated: <span id="last_update"></span>
+                </h1>
+            </div>
+          </footer>
+          </div>
+            <script src="js/greet.js"></script>    
+            <script src="js/home.js"></script>
+            <script src="js/form.js"></script>
+          </body>
+          </html>
