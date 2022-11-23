@@ -25,7 +25,7 @@ function displayCompanies(company){
     address.textContent = `${company.address}`;
     phone.textContent = `${company.phonenumber}`;
     membership.textContent = `${company.level}`;
-    url.textContent = `Company Website`
+    url.textContent = `Business Website`
     url.setAttribute("href", `${company.websiteurl}`);
     url.setAttribute('target', '_blank');
 

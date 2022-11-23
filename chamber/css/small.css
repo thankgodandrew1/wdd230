@@ -19,6 +19,9 @@ body {
     padding: 0;
     color: #232523;
 }
+.body{
+    background-color: var(--accent3-color);
+}
 img{
     box-sizing: border-box;
 }
@@ -134,6 +137,9 @@ img{
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
+.toggle li a{
+    text-align: center;
+}
 .navigation ul{
 	display: none;
 }
@@ -196,13 +202,14 @@ footer {
     color: white;
     border-radius: 10px;
     padding: 20px;
-    left: calc(50% - 110px);
+    margin: 3%;
     
  }
 
  #hero .button {
     width: 80px;
     position: absolute;
+    padding: 10px;
     top: 70%;
     left: calc(50% - 65px);
  }
@@ -213,6 +220,10 @@ footer {
 
  #news {
     text-align: center;
+    border-radius: 20px;
+    margin: 3%;
+    padding: 10px;
+    box-shadow: 0 0 10px #4d4e50;
  }
 
  #news a{
@@ -228,19 +239,13 @@ footer {
  #news p{
     font-size: 1.1em;
  }
- .ad-third {
-   display: none;
- }
 
  #spotlight {
     display: flex;
     flex-direction: column;
  }
- 
- #spotlight a img{
-    margin-bottom: 20px;
- }
- #spotlight a img,  #event a img {
+
+  #event a img {
     width: 100%;
     height: auto;
     box-shadow: 0 0 5px 5px#232523 ;
@@ -261,7 +266,7 @@ footer {
  #weather{
     margin-bottom: 5%;
     text-align: center;
-    background: var(--accent3-color);
+    box-shadow: 0 0 10px #4d4e50;
     border-radius: 2em;
  }
 .weatherIcon{
@@ -576,7 +581,7 @@ form input.submitBtn:hover{
     margin: 4%;
     box-shadow:  0 0 35px navy;
 }
-.directory section img{
+#spotlight section img, .directory section img{
     display: block;
     margin-top: 20px;
     margin-left: auto;
@@ -585,12 +590,25 @@ form input.submitBtn:hover{
     height: 96px;
     box-shadow:  0 0 5px navy;
 }
-.directory section{
+#spotlight section img{
+    width: 80px;
+    height: 70px;
+}
+#spotlight section h3{
+    font-size: 1.3em;
+}
+#spotlight section p{
+    font-size: .8em;
+}
+#spotlight section, .directory section{
     margin: 4%;
     background-color: var(--accent3-color);
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 20px navy;
+}
+#spotlight section{
+    box-shadow: 0 0 10px #4d4e50;
 }
 .list section:nth-child(odd){
     background-color: #eee;
@@ -598,14 +616,14 @@ form input.submitBtn:hover{
 .list section:nth-child(even){
     background-color: #ccc;
 }
-.directory section p{
+#spotlight section p, .directory section p{
     color: var(--primary-color);
     font-weight: 700;
     font-size: 1.4em;
     padding: 1px;
     margin: .5em;    
 }
-.directory section a{
+#spotlight section a, .directory section a{
     font-size: 1.2em;
     font-weight: 700;
     color: #000000;
@@ -613,7 +631,7 @@ form input.submitBtn:hover{
     padding: 20px;
     text-decoration: underline;
 }
-.directory section a:hover{
+#spotlight section a:hover, .directory section a:hover{
     color: #E5002B;
     text-decoration: none;
 }

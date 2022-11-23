@@ -18,18 +18,13 @@
 
     #hero .button {
         font-size: 1.8rem;
-        width: 150px;
-        left: calc(50% - 100px);
+        width: 100px;
+        left: calc(45% - 10px);
     }
 
     #spotlight {
         display: flex;
         flex-direction: row;
-        margin-left: 30px;
-    }
-    #spotlight a img{
-        margin: 0 2% 0 2%;
-        width: 96%;
     }
     #hero img {
         width: 105%;
@@ -66,7 +61,11 @@
     #join {
         display: block;
         text-align: center;
-        margin: 10% 0 10% 0;
+        margin: 5%;
+        /* margin: 0 0 13% 0; */
+        box-shadow: 0 0 10px #4d4e50;
+        padding: 10px;
+        border-radius: 10px;
     }
     #join a{
         color: #eee;
@@ -138,7 +137,7 @@
 .list section{
     align-items: center;
 }
-#cards{
+#cards{ 
     display: flex;
     margin: 3em;
 }
@@ -158,6 +157,9 @@
     gap: 50px;
 }
 .label-flex{
+    width: 100%;
+  }
+  #spotlight section{
     width: 100%;
   }
 }
