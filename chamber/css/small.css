@@ -731,7 +731,7 @@ form input.submitBtn:hover{
     opacity: 80%;
     background-color: orange;
 }
-.form-content input[type=text], input[type=email]{
+.form-content input[type=text], input[type=email], input[type=tel], select{
     width: 100%;
     padding: 12px 20px;
     margin: 1px 0;
@@ -743,14 +743,6 @@ form input.submitBtn:hover{
     display: flex;
     flex-direction: column;   
   }
-.form-content input[type=tel], select{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 1px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
 .label-flex{
     padding-top: 20px;
   }
@@ -780,7 +772,7 @@ form input.submitBtn:hover{
   .container {
     padding: 16px;
   }
-.support-form, .ticket-sucess {
+.support-form{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -797,7 +789,8 @@ form input.submitBtn:hover{
     background-color: #fefefe;
     margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */     
+    width: 80%; /* Could be more or less, depending on screen size */ 
+    border: 3px solid var(--accent3-color);    
 }
 .close{
   position: absolute;
@@ -827,18 +820,23 @@ form input.submitBtn:hover{
     from {transform: scale(0)}
     to {transform: scale(1)}
   }
-  .form-content {
-    border: 3px solid var(--accent3-color
-    );
-  }
+  
 .comp-para{
     text-align: left;
     margin-left: 20px;
     font-weight: bold;
 }
 .points-of-contact p{
+    line-height: 1.5;
     padding: 10px;
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-weight: 500;
     font-family: var(--heading-font);
+}
+.points-of-contact h1{
+    display: block;
+}
+
+.nav{
+    position: static;
 }
