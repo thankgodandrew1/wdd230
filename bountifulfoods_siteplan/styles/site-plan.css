@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400&family=Ubuntu:wght@300&display=swap");
+
+body {
+    background-color: #ffffff;
+    font-family: 'Ubuntu', 'Montserrat', fantasy;
+    font-size: 16px;
+    line-height: 1.5;
+    text-size-adjust: 100%;
+    margin: 1em;
+    padding: 0;
+}
+label.logo{
+    background: linear-gradient(to right, #ff6347, #ffa500);
+    color: white;
+    font-size: 25px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 80px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    width: 20%;
+}
+h1,
+h2{
+    text-align: center;
+    font-family: 'Ubuntu';
+    margin-top: 30px;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to top, #9c27b0, #ffa500);
+
+}
+nav a{
+    width: 100%;
+    text-align: center; 
+    color: #fdfff5;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 22px;
+    transition: 0.3s;
+    font-family: 'Ubuntu';
+}
+nav a:hover {
+    background-color: #0082e6;
+    color: #fdfff5;
+}
+
+
+.colors {
+    width: 100%;
+    min-width: 250px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Ubuntu';
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.colors th {
+    background-color: #999;
+    color: #000000;
+}
+
+.colors td {
+    width: 20%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #ff6347;
+}
+
+.secondary {
+    background-color: #ffa500;
+}
+
+.accent1 {
+    background-color: #9c27b0;
+}
+
+.accent2 {
+    background-color: #d3d3d3;
+    color: #000000;
+}
+.font1{
+    font-family: 'Ubuntu';
+}
+.font2{
+    font-family: 'Montserrat';
+}
+.grid{
+    display: flex;
+    justify-content: space-around;
+}
+.person1, .person2{
+    display: inline;
+    margin-left: -15px;
+    font-size: 35px;
+    font-family: 'Ubuntu';
+    color: #000000;
+}
+li{
+    font-size: 20px;
+    margin: 15px;
+}
+img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+body{
+    background:linear-gradient(to right, #9c27b0, #ffa500);
+}
+.footer{
+    background-color: #ff6347;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer a{
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer a:hover{
+    background-color: #0082e6;
+    letter-spacing: .3px;
+}
+.palette{
+    color: #000000;
+}
+.palette:hover{
+    color: blue;
+}
+@media screen and (max-width: 700px) {
+    nav{
+        display: block;
+        height: auto;
+        flex-direction: column;
+    }
+    nav a{
+        
+        display: block;
+        padding: 15px;
+        margin: 0 auto;
+        width: 92%;
+        /* padding: 15px; */
+    }
+    .grid{
+        display: block;
+    }
+    li{
+        font-size: 18px;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 300px) {
+    nav a{
+        width: 100%;
+    }
+    .colors{
+        width: 100%;
+    }
+}
