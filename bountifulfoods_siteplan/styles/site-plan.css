@@ -63,7 +63,7 @@ nav a:hover {
     margin: 30px auto;
     text-align: center;
     font-family: 'Ubuntu';
-    color: #FFFFFF;
+    color: #000000;
     font-weight: bold;
 }
 
@@ -91,7 +91,6 @@ nav a:hover {
 
 .accent2 {
     background-color: #d3d3d3;
-    color: #000000;
 }
 .font1{
     font-family: 'Ubuntu';
