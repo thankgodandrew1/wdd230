@@ -169,12 +169,12 @@ body{
     p{
         font-size: 18px;
     }
+    label.logo{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 300px) {
     nav a{
-        width: 100%;
-    }
-    .colors{
         width: 100%;
     }
 }
