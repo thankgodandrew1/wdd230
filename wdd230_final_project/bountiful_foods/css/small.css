@@ -135,16 +135,25 @@ p, a{
     /* max-width: 60rem; */
     color: black;
 }
+.hero-text{
+    background-color: rgb(255, 165, 0, .7);
+    box-shadow: 1px 1px 5px rgb(94, 55, 55);
+    max-width: 95%;
+    margin: auto;
+    padding: .1px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
 .hero-text h1{
     text-align: center;
     margin-top: 7rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 .hero-text p{
     text-align: center;
     margin: 1rem 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     /* line-height: 10px; */
 }
@@ -283,30 +292,28 @@ p, a{
 .footer .share{
     padding: 1rem 0;
 }
-.footer .share a{
-    /* padding: 1rem 0; */
-    width: 5rem;
-    height: 5rem;
-    line-height: 5rem;
-    font-size: 1.5rem;
+.footer .share i{
+    width: 2.5rem;
+    /* height: 5rem; */
+    line-height: 2.7rem;
+    font-size: 1.3rem;
     color: #fff;
     border: 2px solid var(--secondary-color);
     margin: .3rem;
     border-radius: 50%;
 }
-.footer .share a:hover{
-    background-color: #0082e6;
-
+.footer .share i:hover{
+    background: linear-gradient(to right, #ff6347, #ffa500 );
 }
 .footer .links{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
-    gap: 1rem;
+    gap: 1.5em;
 }
 .footer .links a{
-    padding: .7rem 2rem;
+    padding: .7rem 1rem;
     color: #fff;
     border: 1px solid var(--secondary-color);
     font-size: 1.3rem;
@@ -315,13 +322,13 @@ p, a{
     background: linear-gradient(to right, #ff6347, #ffa500 );
 }
 
-.footer .credit, .contacts{
+.footer .credit h2, .contacts h2{
     font-size: 1.3rem;
     color: #fff;
     font-weight: lighter;
     padding: 1.5rem;
 }
-.contacts{
+.contacts h2{
     color: #000000;
     font-weight: normal;
 }
@@ -329,7 +336,7 @@ p, a{
     color: #333;
 }
 .weather-source {
-    padding: 15px;
+    /* padding: 5px; */
     font-size: 18px;
     font-weight: bold;
 }
@@ -337,3 +344,12 @@ p, a{
     color: var(--accent3-color);
 }
 /* ------- FOOTER SECTION ENDS HERE ---------- */
+
+
+/* Extra small screen */
+@media only screen and (max-width: 300px){
+    .menu .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+}

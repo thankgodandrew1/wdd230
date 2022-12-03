@@ -3,6 +3,9 @@
         font-size: 33px;
         padding: 0 50px;
     }
+    .hero-text{
+        max-width: 70%;
+    }
     .hero-text p{
         font-size: 1.4rem;
     }
@@ -17,10 +20,12 @@
     .about .row .content h3{
         font-size: 2.5rem;
     }
-    .footer .share a{
+    .footer .share i{
         font-size: 2rem;
+        width: 4rem;
+        line-height: 4rem;
     }
-    .footer .credit, .contacts{
+    .footer .credit h2, .contacts h2{
         font-size: 1.7rem;
     }
     .weathertotal-container{
