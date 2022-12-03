@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400&family=Ubuntu:wght@300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: linear-gradient(to right, lightgrey, tomato);
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Ubuntu', 'Montserrat', sans-serif;
+    text-size-adjust: 100%;
+}
+:root {
+    --primary-color: #ff6347;
+    --secondary-color: #ffa500;
+    --accent1-color: #9c27b0;
+    --accent2-color: #d3d3d3;
+    --accent3-color: #ffffff;
+    --heading-font: 'Ubuntu';
+    --paragraph-font: 'Montserrat';
+}
+h1, h2, h3{
+    font-family: var(--heading-font);
+}
+p, a{
+    font-family: var(--paragraph-font);
+}
+.navbar{
+    width: 100%;
+    /* height: 80px; */
+    position: fixed;
+    background: linear-gradient(to right, #9c27b0, orange);
+    z-index: 1;
+    overflow: hidden;
+}
+.navbar label.logo{
+    font-size: 25px;
+    padding-left: 10px;
+    line-height: 80px;
+    font-weight: bold;
+    font-style: italic;
+}
+.navbar label.logo a{
+    color: var(--accent3-color);
+}
+.navbar ul li {
+    display: block;
+    line-height: 80px;
+}
+.navbar .toggle li a{
+    display: block;
+    text-align: center;
+    color: var(--accent3-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+.navbar .toggle li a:hover{
+    background: linear-gradient(to right, orange,orange, yellow); 
+    color: #000;
+    /* transition: .5s; */
+}
+.navbar .toggle li a.active{
+    color: #0082e6;
+    background: linear-gradient(to right, lightgrey, orange);
+}
+#hamburgerBtn{ 
+    background: transparent;
+    font-size: 30px;
+    color: var(--accent3-color);
+    border: none;
+    line-height: 80px;
+    margin-right: 40px;
+    float: right;
+    cursor: pointer;
+}
+/* section{
+    background: url(../images/bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(40vw - 80px);
+} */
+
+.fresh:hover::after{
+    content: ' 🍒';
+}
+.navbar ul{
+    display: none;
+}
+.navbar ul.open{
+    display: block;
+}
+#hamburgerBtn span:nth-child(1){
+    display: block;
+}
+#hamburgerBtn.open span:nth-child(1){
+    display: none;
+}
+
+/* ------- HERO SECTION STARTS HERE ---------- */
+.hero-area{
+    /* display: flex; */
+    /* /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    display: inline-block;
+    /* justify-content: space-between; */
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    width: 100%;
+    /* height: 70vh; */
+    /* padding: 0 0 1000px 0; */
+    background-repeat: no-repeat;
+}
+.hero-area a, .btn{
+    /* display: block; */
+    padding: .5rem 1.5rem;
+    background: linear-gradient(to right, orange, tomato);
+    color: var(--accent3-color);
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    box-shadow: 1px 1px 5px rgb(94, 55, 55);
+}
+.hero-area a:hover, a:hover{
+    /* letter-spacing: .3px; */
+    color: black;
+    /* background: tomato; */
+}
+.hero-area .hero-text{
+    /* max-width: 60rem; */
+    color: black;
+}
+.hero-text h1{
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.hero-text p{
+    text-align: center;
+    margin: 1rem 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    /* line-height: 10px; */
+}
+.heroBtn, .btn{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem;
+}
+.heroBtn a:hover::after{
+    content: ' 🧃';
+    width: 100%;
+}
+/* ------- HERO SECTION ENDS HERE ---------- */
+
+/* ------- ABOUT CARLSBAD, CA SECTION STARTS HERE ---------- */
+.heading{
+    text-align: center;
+    color: var(--accent3-color);
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    font-size: 2.4rem;
+}
+.heading span{
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, tomato, orange);
+    color: white;
+    flex-wrap: wrap;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .image img{
+    width: 100%;
+    /* height: 100vh; */
+    padding: 1rem;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.about .row .content h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #eee;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.about, .menu{
+    padding: 1rem;
+}
+/* ------- ABOUT CARLSBAD, CA SECTION ENDS HERE ---------- */
+
+/* ------- PRODUCTS MENU SECTION STARTS HERE ---------- */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+.menu .box-container .box{
+    padding: 3rem;
+    text-align: center;
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.menu .box-container .box img{
+    /* height: 100%; */
+    width: 100%;
+    border-radius: 7px;
+}
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+.menu .box-container .box .price span{
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.menu .box-container .box:hover{
+    background: linear-gradient(to top, #9c27b0, #ffa500);
+}
+.menu .box-container .box:hover > *{
+    color: black;
+    color: #ff6347 #ffa500 #9c27b0;
+}
+/* ------- PRODUCTS MENU SECTION ENDS HERE ---------- */
+
+/* ------- WEATHER AND ORDER TOTAL SECTION STARTS HERE ---------- */
+.weathertotal-container{
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.weather{
+    background: linear-gradient(to right, #bbb, #bbb, #aaa, lightgrey);
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+}
+.freshtotal{
+    background: linear-gradient(to bottom, #aaa, #9c27b0);
+    width: 100%;
+    padding: 15px;
+    margin: 5px;
+}
+.freshtotal p{
+    font-size: 2rem;
+    padding: 20%;
+}
+/* ------- WEATHER AND ORDER TOTAL SECTION ENDS HERE ---------- */
+
+
+
+/* ------- FOOTER SECTION STARTS HERE ---------- */
+.footer{
+    background: var(--primary-color);
+    text-align: center;
+}
+.footer .share{
+    padding: 1rem 0;
+}
+.footer .share a{
+    /* padding: 1rem 0; */
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border: 2px solid var(--secondary-color);
+    margin: .3rem;
+    border-radius: 50%;
+}
+.footer .share a:hover{
+    background-color: #0082e6;
+
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    font-size: 1.3rem;
+}
+.footer .links a:hover{
+    background: linear-gradient(to right, #ff6347, #ffa500 );
+}
+
+.footer .credit, .contacts{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+.contacts{
+    color: #000000;
+    font-weight: normal;
+}
+.footer .credit span{
+    color: #333;
+}
+.weather-source {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer .credit .color{
+    color: var(--accent3-color);
+}
+/* ------- FOOTER SECTION ENDS HERE ---------- */

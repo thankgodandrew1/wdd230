@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Bountiful Foods Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="https://kit.fontawesome.com/ebcf57f900.js" crossorigin="anonymous"></script>
+    <title>Bountiful Food</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button id="hamburgerBtn"><span>&#9776;</span></button>
+            <!-- <input type="checkbox" id="check">
+            <label for="check" class=" checkBtn"><i class="fas fa-bars"></i></label> -->
+            <label class="logo"> <a href="index.html">BountifulFoods</a></label>
+            <ul class="toggle">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="fresh" href="fresh.html">Fresh</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="../bountifulfoods_siteplan/index.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="hero-area">
+            <div class="hero-text">
+                <h1>100% natural fruit, drinks & produce <br> If you love organic produce you will definitely love us!</h1>
+                <p>Help reduce food waste. All-natural, healthy and delicious. <br>Sourced from local farmers at Carlsbad, and international suppliers just for you</p>
+                <p></p>
+                <div class="heroBtn">
+                    <!-- <a href="">Call Now</a> -->
+                    <a href="">Make your fresh fruit mix</a>
+                </div>
+            </div>
+        </div>
+    <main class="home-main">
+        <section class="about" id="about">
+            <h1 class="heading"> <span>Carlsbad,</span> California</h1>
+            <div class="row">
+                <div class="image">
+                    <img src="images/carlsbad_oceanfront.jpg" alt="image of carlsbad ocean front" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>About Carlsbad, California</h3>
+                    <p>Carlsbad is a coastal city in California with a population of 114,746. Carlsbad is in San Diego County and is 
+                        one of the best places to live in California.
+                    </p>
+                    <p>Living in Carlsbad offers residents a dense suburban feel and most residents own their homes, Carlsbad is also a popular 
+                        tourist destination.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Carlsbad,_California" target="_blank" class="btn">learn more...</a>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <h2 class="heading">our <span> Products</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/hero.jpg" alt="">
+                    <h3>Make your fresh fruit mix</h3>
+                    <!-- <div class="price">$15.99<span>$20.0</span></div> -->
+                     <a href="" class="btn">Get started</a>
+                </div>
+                <div class="box">
+                    <img src="images/hero.jpg" alt="">
+                    <h3>Make your fresh fruit mix</h3>
+                    <!-- <div class="price">$15.99<span>$20.0</span></div> -->
+                     <a href="" class="btn">Get started</a>
+                </div>
+                <div class="box">
+                    <img src="images/hero.jpg" alt="">
+                    <h3>Make your fresh fruit mix</h3>
+                    <!-- <div class="price">$15.99<span>$20.0</span></div> -->
+                     <a href="" class="btn">Get started</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="weathertotal-container">
+                <div class="weather">
+                    <h2>Weather</h2>
+                    <img class="weatherIcon" src="images/cloudy.png" alt="Weather Icon">
+                    <br>
+                    <p class="temperature"><strong><span id="temperature"></span></strong></p>
+                    <br>
+                    <p class="feels-like"><strong><span id="feelsLike"></span></strong></p>
+                    <br>    
+                    <p class="humidity"><strong><span id="humidity"></span></strong></p>
+                    <br>
+                    <p class="sky-condition"><strong><span class="skyCondition"></span></strong></p>
+                    <br>
+                    <p class="wind-chill"><strong><span id="windChill"></span></strong></p>
+                </div>
+                <div class="freshtotal"><p>You've created <span id="freshTotal">0</span> drinks</p></div>
+            </div>  
+            
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="share">
+                <a href="https://facebook.com" class="fa fa-facebook"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+                <a href="https://instagram.com" class="fa fa-instagram"></a>
+                <a href="https://pinterest.com" class="fa fa-pinterest"></a>
+                <a href="https://youtube.com" class="fa fa-youtube"></a>
+            </div>
+            <div class="links">
+                <a href="">Home</a>
+                <a class="fresh" href="">Fresh</a>
+                <a  href="">About Us</a>
+                <a href="../bountifulfoods_siteplan/index.html">Site Plan</a>
+            </div>
+            <div class="contacts">Contact information: <br> Address: 1855A DWayne Street, Carlsbad, CA 92008 <br> Phone: 234-654-5746</div>
+            <div class="credit">&copy; <span class="color" id="current_year"></span> Bountiful Foods| created by <span>ThankGod Andrew</span> all rights reserved | WDD 230 Final Project | 
+                Last Updated: <span class="color" id="last_update"></span></div>
+                <div class="weather-source"><a href="https://openweathermap.org">Weather Source: OpenWeatherMap.org</a></div>
+        </section>
+    </footer>
+  
+<script src="js/home.js"></script>
+</body>
+</html>
