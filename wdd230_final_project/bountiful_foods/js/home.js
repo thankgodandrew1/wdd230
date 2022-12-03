@@ -51,43 +51,6 @@ function doStuff(data) {
     document.querySelector("#feelsLike").textContent = feelsLike
     document.querySelector("#humidity").textContent = humidity
     document.querySelector("#windChill").textContent = windChill
-    
-    // const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    //     // Get relevant API info
-    //     const date = new Date();
-    //     const today = date.getDay();
-
-    //     const hi1 = weatherData.daily[0].temp.max.toFixed(0);
-    //     const hi2 = weatherData.daily[1].temp.max.toFixed(0);
-    //     const hi3 = weatherData.daily[2].temp.max.toFixed(0);
-
-    //     const lo1 = weatherData.daily[0].temp.min.toFixed(0);
-    //     const lo2 = weatherData.daily[1].temp.min.toFixed(0);
-    //     const lo3 = weatherData.daily[2].temp.min.toFixed(0);
-
-    //     // DOM elements to be manipulated
-    //     const day1 = document.getElementById("dOW1");
-    //     day1.textContent = weekday[today+1];
-    //     const day2 = document.getElementById("dOW2");
-    //     day2.textContent = weekday[today+2];
-    //     const day3 = document.getElementById("dOW3");
-    //     day3.textContent = weekday[today+3];
-
-    //     const sufFar = " °F"
-    //     const hiEl1 = document.getElementById("hi1");
-    //     hiEl1.textContent = hi1 +sufFar;
-    //     const hiEl2 = document.getElementById("hi2");
-    //     hiEl2.textContent = hi2 +sufFar;
-    //     const hiEl3 = document.getElementById("hi3");
-    //     hiEl3.textContent = hi3 +sufFar;
-
-    //     const loEl1 = document.getElementById("lo1");
-    //     loEl1.textContent = lo1 +sufFar;
-    //     const loEl2 = document.getElementById("lo2");
-    //     loEl2.textContent = lo2 +sufFar;
-    //     const loEl3 = document.getElementById("lo3");
-    //     loEl3.textContent = lo3 +sufFar;
-
 }
 
 function calcWindChill(t, s) {
