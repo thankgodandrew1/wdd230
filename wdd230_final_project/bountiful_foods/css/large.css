@@ -60,5 +60,23 @@
     .hero-area a{
         font-size: 1.2rem;
     }
+    .footer .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1.5em;
+        margin-bottom: -30px;
+    }
+    .footer .links a{
+        /* display: block; */
+        padding: .7rem 1rem;
+        color: #fff;
+        border: 1px solid var(--secondary-color);
+        font-size: 1.3rem;
+    }
+    .footer .links a:hover{
+        background: linear-gradient(to right, #ff6347, #ffa500 );
+    }
     
 }

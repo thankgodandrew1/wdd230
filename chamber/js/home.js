@@ -7,7 +7,7 @@ const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
 
 const date = new Date();
-console.log(date)
+// console.log(date)
 const year = date.getFullYear();
 
 const currentYear = document.querySelector("#current_year");

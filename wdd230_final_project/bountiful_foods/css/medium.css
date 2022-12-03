@@ -20,6 +20,15 @@
     .about .row .content h3{
         font-size: 2.5rem;
     }
+    .menu .box-container .box:nth-child(4){
+        display: block;
+    }
+    .menu .box-container .box:nth-child(5){
+        display: block;
+    }
+    .menu .box-container .box:nth-child(6){
+        display: block;
+    }
     .footer .share i{
         font-size: 2rem;
         width: 4rem;
@@ -34,6 +43,7 @@
     .freshtotal p{
         font-size: 3rem;
     }
+
     /* .menu .box_container{
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     } */
