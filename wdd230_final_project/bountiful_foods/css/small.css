@@ -381,4 +381,8 @@ p, a{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
+   .heroBtn, .btn{
+    width: 100%;
+    margin: auto;
+   }
 }
