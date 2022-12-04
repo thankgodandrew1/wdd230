@@ -269,15 +269,47 @@ p, a{
 /* ------- WEATHER AND ORDER TOTAL SECTION STARTS HERE ---------- */
 .weathertotal-container{
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     padding: 15px;
     flex-wrap: wrap;
+}
+.weather p{
+    line-height: 30px;
+}
+.w-forcast{
+    display: block;
+    padding: 10px;
+}
+.wh2{
+    margin-top: 20px;
+}
+.forecast{
+    margin: 20px;
+    padding: 10px;
+    background: linear-gradient(to right, #bbb, #bbb, #aaa, #999);
+    box-shadow: 2px 2px 5px black;    
+}
+.forecast p{
+    font-weight: bold;
+    padding: 8px;
+}
+.forecast p:nth-child(1){
+    font-size: 22px;
 }
 .weather{
     background: linear-gradient(to right, #bbb, #bbb, #aaa, lightgrey);
     width: 100%;
     padding: 15px;
     margin: 5px;
+    color: #000000;
+}
+.sky-condition{
+    border-bottom: 2px solid #999;
+   
+}
+.humidity{
+    margin-top: 10px;
 }
 .freshtotal{
     background: linear-gradient(to bottom, #aaa, #9c27b0);

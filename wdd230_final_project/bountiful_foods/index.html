@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="ThankGod Andrew" >
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
     <meta name="description"
     content="Bountiful Foods Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
@@ -21,9 +27,9 @@
             <label for="check" class=" checkBtn"><i class="fas fa-bars"></i></label> -->
             <label class="logo"> <a href="index.html">BountifulFoods</a></label>
             <ul class="toggle">
-                <li><a class="active" href="#">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a class="fresh" href="fresh.html">Fresh</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="../bountifulfoods_siteplan/index.html">Site Plan</a></li>
             </ul>
         </nav>
@@ -35,7 +41,7 @@
                 <p></p>
                 <div class="heroBtn">
                     <!-- <a href="">Call Now</a> -->
-                    <a href="">Make your fresh fruit mix</a>
+                    <a href="fresh.html">Make your fresh fruit mix</a>
                 </div>
             </div>
         </div>
@@ -104,31 +110,31 @@
                     <img class="weatherIcon" src="images/cloudy.png" alt="Weather Icon">
                     <br>
                     <p class="temperature"><strong><span id="temperature"></span></strong></p>
-                    <br>
-                    <p class="feels-like"><strong><span id="feelsLike"></span></strong></p>
-                    <br>    
-                    <p class="humidity"><strong><span id="humidity"></span></strong></p>
-                    <br>
                     <p class="sky-condition"><strong><span class="skyCondition"></span></strong></p>
+                    <!-- <br>     -->
+                    <p class="humidity"><strong><span id="humidity"></span></strong></p>
+                    <!-- <br> -->
+                
                     <br>
-                    <p class="wind-chill"><strong><span id="windChill"></span></strong></p>
-                    <div id="bot-weath" class="row-center">   
+                    <hr>
+                    <!--WEATHER FORECAST STARTS HERE -->
+                    <h2 class="wh2">Weather Forecast</h2>
+                    <div class="w-forcast">   
                         <div id="day1" class="forecast">
-                            <p id="dOW1"></p>
-                            <p id="hi1" class="hi"></p>
-                            <p id="lo1" class="lo"></p>
+                            <p class="day1"></p>
+                            <p id="temp1" class="hi"></p>
                         </div>
                         <div id="day2" class="forecast">
-                            <p id="dOW2"></p>
-                            <p id="hi2" class="hi"></p>
-                            <p id="lo2" class="lo"></p>
+                            <p class="day2"></p>
+                            <p id="temp2" class="hi"></p>
                         </div>
                         <div id="day3" class="forecast">
-                            <p id="dOW3"></p>
-                            <p id="hi3" class="hi"></p>
-                            <p id="lo3" class="lo"></p>
+                            <p class="day3"></p>
+                            <p id="temp3" class="hi"></p>
                         </div>
                     </div>
+                    <!--WEATHER FORECAST ENDS HERE -->
+
                 </div>
                 <div class="freshtotal"><p>You've created <span id="freshTotal">0</span> drinks</p></div>
             </div>  
