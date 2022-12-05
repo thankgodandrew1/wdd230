@@ -81,4 +81,11 @@
     .w-forcast{
         display: flex;
     }    
+
+    /* -----------ABOUT US STYLING SECTION------------ */
+
+    .aboutus-area h1{
+        padding:  0 20px 0 10px;
+        font-size: 4em;
+    }
 }

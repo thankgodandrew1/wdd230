@@ -163,10 +163,7 @@ p, a{
     justify-content: center;
     margin: 3rem;
 }
-.heroBtn a:hover::after{
-    content: ' 🧃';
-    width: 100%;
-}
+
 /* ------- HERO SECTION ENDS HERE ---------- */
 
 /* ------- ABOUT CARLSBAD, CA SECTION STARTS HERE ---------- */
@@ -373,6 +370,96 @@ p, a{
     color: var(--accent3-color);
 }
 /* ------- FOOTER SECTION ENDS HERE ---------- */
+
+/* -------ABOUT US PAGE STARTS HERE----------- */
+
+.aboutus-area{
+    text-align: center;
+    background-image: url(../images/aboutus_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+}
+.aboutus-textarea{
+    margin: 0 1em 1em 1em;
+    padding: 0 1rem 1rem 1rem;
+    background-color: rgb(253, 255, 245, .8);
+    text-transform: uppercase;
+}
+.aboutus-area h1{
+    padding:  65px 20px 0 30px;
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 4px #aaa;
+    text-align: left;
+}
+.aboutus-area h2{
+    border-bottom: 2px solid var(--secondary-color);
+    padding-top: 15px;
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 1.5rem;
+}
+.aboutus-textarea img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.aboutus-textarea p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.top-workers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.workers-header{
+    text-align: center;
+    padding: 20px;
+}
+.worker{
+    padding: 20px;
+}
+.worker img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+.worker p{
+    padding: 7px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Extra small screen */

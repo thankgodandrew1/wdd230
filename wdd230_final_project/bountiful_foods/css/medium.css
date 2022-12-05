@@ -1,4 +1,8 @@
 @media only screen and (min-width: 35em){
+    .heroBtn a:hover::after{
+        content: ' 🧃';
+        width: 100%;
+    }
     .navbar label.logo{
         font-size: 33px;
         padding: 0 50px;
@@ -42,6 +46,32 @@
     }
     .freshtotal p{
         font-size: 3rem;
+    }
+    /* --------ABOUT US STYLING SECTION----------- */
+
+    .aboutus-textarea{
+        text-align: center;
+        float: right;
+        max-width: 70%;
+        margin: 0 5em 5em 5em;
+        padding: 0 5rem 5rem 5rem;
+    }
+    .aboutus-area h1{
+        padding:  60px 20px 0 30px;
+        font-size: 3.4em;
+    }
+    .aboutus-area h2{
+        font-size: 2rem;
+    }
+    .aboutus-textarea img{
+        width: 80%;
+    }
+    /* .aboutus-textarea p{
+        text-align: center;
+    } */
+    .worker img{
+        width: 10em;
+        height: 10em;
     }
     /* .menu .box_container{
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
