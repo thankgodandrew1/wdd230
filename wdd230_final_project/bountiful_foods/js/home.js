@@ -1,4 +1,4 @@
-//$$$$$$$$$$ The toggle function $$$$$$$$$$$
+//$$$$$$$$$$ The toggle function
 function toggleMenu() {
     document.querySelector('.toggle').classList.toggle('open')
     document.getElementById('#hamburgerBtn').classList.toggle('open')
@@ -6,7 +6,7 @@ function toggleMenu() {
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
 
-//$$$$$$$$$$$ Copyright year and last modified date function $$$$$$$$$$$$$$
+//$$$$$$$$$$$ Copyright year and last modified date function
 function date(){
     const date = new Date();
     const year = date.getFullYear();
@@ -19,7 +19,7 @@ function date(){
 
 }
 
-//$$$$$$$$$$$$ The Carlsbard Weather Functions section $$$$$$$$$$$$$$$
+//$$$$$$$$$$$$ The Carlsbard Weather Functions section
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,US&appid=a2812664bebf2b97b52c7942dbdeb2ed&units=metric";
 const forcastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.1581&lon=-117.3506&exclude=current,minutely,hourly,alerts&appid=0f8c88146a435b8db9d6af1cacbbc02a&units=METRIC";
 
@@ -77,7 +77,40 @@ function displayResult(data, current = 'curWea') {
         const temperature3 = document.getElementById("temp3");
         temperature3.textContent = temp3 +"°C";
     }
+};
+
+// $$$$$$$$$$$$ THE FRESH PAGE JSON FUNCTION SECTION
+
+fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json"
+
+
+async function getFruits(fruitURL){
+    const response = await fetch(fruitURL);
+    const data = await response.json();
+    displayFruits(data)
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 date();
 getWeather(url, 'curWea');
 getWeather(forcastURL, 'forecast');
