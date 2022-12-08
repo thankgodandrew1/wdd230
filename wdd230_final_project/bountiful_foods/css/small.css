@@ -189,6 +189,7 @@ p, a{
     color: #eee;
     padding: 1rem 0;
     line-height: 1.8;
+    text-align: left;
 }
 .about, .menu{
     padding: 1rem;
