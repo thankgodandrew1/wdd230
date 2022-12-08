@@ -30,7 +30,6 @@ p, a{
 }
 .navbar{
     width: 100%;
-    /* height: 80px; */
     position: fixed;
     background: linear-gradient(to right, #9c27b0, orange);
     z-index: 1;
@@ -63,7 +62,6 @@ p, a{
 .navbar .toggle li a:hover{
     background: linear-gradient(to right, orange,orange, yellow); 
     color: #000;
-    /* transition: .5s; */
 }
 .navbar .toggle li a.active{
     color: #0082e6;
@@ -79,12 +77,6 @@ p, a{
     float: right;
     cursor: pointer;
 }
-/* section{
-    background: url(../images/bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(40vw - 80px);
-} */
-
 .fresh:hover::after{
     content: ' 🍒';
 }
@@ -103,16 +95,10 @@ p, a{
 
 /* ------- HERO SECTION STARTS HERE ---------- */
 .hero-area{
-    /* display: flex; */
-    /* /* flex-direction: row; */
-    /* flex-wrap: wrap; */
     display: inline-block;
-    /* justify-content: space-between; */
     background-image: url(../images/hero.jpg);
     background-size: cover;
     width: 100%;
-    /* height: 70vh; */
-    /* padding: 0 0 1000px 0; */
     background-repeat: no-repeat;
 }
 .hero-area a, .btn{
@@ -125,14 +111,12 @@ p, a{
     border-radius: 10px;
     border: 2px solid var(--primary-color);
     box-shadow: 1px 1px 5px rgb(94, 55, 55);
+    cursor: pointer;
 }
 .hero-area a:hover, a:hover{
-    /* letter-spacing: .3px; */
     color: black;
-    /* background: tomato; */
 }
 .hero-area .hero-text{
-    /* max-width: 60rem; */
     color: black;
 }
 .hero-text{
@@ -155,7 +139,6 @@ p, a{
     margin: 1rem 10px;
     font-size: 1rem;
     text-transform: uppercase;
-    /* line-height: 10px; */
 }
 .heroBtn, .btn{
     display: block;
@@ -191,7 +174,6 @@ p, a{
 }
 .about .row .image img{
     width: 100%;
-    /* height: 100vh; */
     padding: 1rem;
 }
 .about .row .content{
@@ -226,7 +208,6 @@ p, a{
     border-radius: 10px;
 }
 .menu .box-container .box img{
-    /* height: 100%; */
     width: 100%;
     border-radius: 7px;
 }
@@ -289,10 +270,10 @@ p, a{
 }
 .forecast p{
     font-weight: bold;
-    padding: 8px;
+    padding: 8px; 
 }
 .forecast p:nth-child(1){
-    font-size: 22px;
+    font-size: 25px;
 }
 .weather{
     background: linear-gradient(to right, #bbb, #bbb, #aaa, lightgrey);
@@ -315,7 +296,7 @@ p, a{
     margin: 5px;
 }
 .freshtotal p{
-    font-size: 2rem;
+    font-size: 20px;
     padding: 20%;
 }
 /* ------- WEATHER AND ORDER TOTAL SECTION ENDS HERE ---------- */
@@ -333,7 +314,6 @@ p, a{
 }
 .footer .share i{
     width: 2.5rem;
-    /* height: 5rem; */
     line-height: 2.7rem;
     font-size: 1.3rem;
     color: #fff;
@@ -362,7 +342,6 @@ p, a{
     color: #333;
 }
 .weather-source {
-    /* padding: 5px; */
     font-size: 18px;
     font-weight: bold;
 }
@@ -393,7 +372,6 @@ p, a{
     font-weight: bolder;
     color: white;
     text-shadow: 2px 4px #aaa;
-    /* text-align: left; */
 }
 .aboutus-area h2{
     border-bottom: 2px solid var(--secondary-color);
@@ -445,31 +423,81 @@ p, a{
 }
 .contact-area a{
     font-size: 1.6m;
+    font-weight: 600;
 }
 
+/* -------ABOUT US PAGE ENDS HERE----------- */
 
+/* -------FRESH PAGE STARTS HERE----------- */  
+.fruit-section, #fruit-output{
+    background: linear-gradient(to right, #ff6347, #ffa500 );
+    margin: 10px 15px;
+    margin-top: 7em;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px rgb(253, 255, 245, .8);
+    color: rgb(253, 255, 245, .8);;
+}
+.fruit-section h1, p{
+    text-align: center;
+}
+#fruit-output{
+    background: linear-gradient(to right, #ffa500, #ff6347 );
+    color: #000;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#fruit-output p{
+    padding: 2px;
+    font-weight: 400;
+}
+#fruit-output h2{
+    padding-bottom: 5px;
+}
+#fruitMixForm  .btn{
+    width: 100%;
+    display: block;
+   float: left;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#fruitMixForm  .btn:hover{
+    color: #000;
 
+}
+.input, textarea{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0.5px solid #006D7780;
+    padding: 10px .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+  }
+  
+  .input:focus{
+    animation: border-color ease-in-out;
+    border: 1px solid var(--accent1-color);
+    outline: none;
+    transition: .1s;
+    box-shadow: 0 0 10px 1px var(--accent1-color);
+  
+  }
+.client-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.client-info label, .selector, .textarea{
+    width: 100%;
+    padding: 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Extra small screen */
+/* Extra small screen like Galaxy Fold Mobile*/
 @media only screen and (max-width: 300px){
     .menu .box-container{
         display: grid;

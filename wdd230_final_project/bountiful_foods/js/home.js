@@ -21,7 +21,7 @@ function date(){
 
 //$$$$$$$$$$$$ The Carlsbard Weather Functions section
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad,US&appid=a2812664bebf2b97b52c7942dbdeb2ed&units=metric";
-const forcastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.1581&lon=-117.3506&exclude=current,minutely,hourly,alerts&appid=0f8c88146a435b8db9d6af1cacbbc02a&units=METRIC";
+const forcastURL = "https://api.openweathermap.org/data/2.5/onecall?lat=33.1581&lon=-117.3506&exclude=current,minutely,hourly,alerts&appid=b045804ab93431828b3e101e2be26dc1&units=METRIC";
 
 async function getWeather(url, curWea) {
     const response = await fetch(url);
@@ -54,7 +54,7 @@ function displayResult(data, current = 'curWea') {
         // document.querySelector("#windChill").textContent = windChill
     }
     else{
-        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
         const date = new Date();
         const today = date.getDay();
@@ -79,38 +79,38 @@ function displayResult(data, current = 'curWea') {
     }
 };
 
-// $$$$$$$$$$$$ THE FRESH PAGE JSON FUNCTION SECTION
+// LAZY LOADING FUNCTIONS SECTION
+let imagesToLoad = document.querySelectorAll("img[data-src]");
 
-fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json"
+const options = {
+    threshold: 0.75,
+    rootMargin: "0px"
+};
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
 
-
-async function getFruits(fruitURL){
-    const response = await fetch(fruitURL);
-    const data = await response.json();
-    displayFruits(data)
-
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+      items.forEach((item) => {
+        if (item.isIntersecting) {
+          loadImages(item.target);
+          observer.unobserve(item.target);
+        }
+      });
+    }, options);
+    imagesToLoad.forEach((img) => {
+      observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+      loadImages(img);
+    });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 date();
 getWeather(url, 'curWea');
-getWeather(forcastURL, 'forecast');
+getWeather(forcastURL, 'forecast'); 

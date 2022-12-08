@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="Author" content="ThankGod Andrew" >
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_io/site.webmanifest">
+
+    <meta name="description"
+    content="Bountiful Foods Home Page WDD230: Web Frontend Development at Brigham Young University - Idaho" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" >
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script src="https://kit.fontawesome.com/ebcf57f900.js" crossorigin="anonymous"></script>
+    <title>Bountiful Food</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <button id="hamburgerBtn"><span>&#9776;</span></button>
+            <label class="logo"><a href="index.html">BountifulFoods</a></label>
+            <ul class="toggle">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="fresh active" href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="../bountifulfoods_siteplan/index.html">Site Plan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="fresh-main">
+        <section class="fruit-section">
+            <h1 id="form-head">Make a Fresh Fruit Drink!</h1>
+            <p>* required fields</p>
+            <form id="fruitMixForm">
+                <input type="date" name="date" hidden id="date">
+                <div class="client-info">
+                    <label><b>First Name*</b><input type="text" name="fname" class="input" id='fname' required></label>                                            
+                    <label><b>Email*</b><input name="email" type="email" id="email" class="input" required></label>
+                    <label><b>Phone Number*</b><input name="phone" type="tel" id="phone" class="input" required></label>
+                </div>
+                <div id="fruit-selector" class="selector">
+                    <b>Please Select up to 3 fruits:</b>
+                </div>
+                <label class="textarea"><b>Add special requests:</b><textarea name="specialInstruc" cols="110" rows="5" id="specialInstruc" class="input"></textarea></label>   
+                <button id="Btn" class="btn">Mix it!</button>
+            </form>
+        </section>
+        <section id="fruit-output">
+            <h2>Fruit Mix Output:</h2>
+            <div id="output">
+                <p>Please create a fruit drink mix to see it's nutrients.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="share">
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+            
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a class="fresh" href="fresh.html">Fresh</a>
+                <a  href="aboutus.html">About Us</a>
+                <a href="../bountifulfoods_siteplan/index.html">Site Plan</a>
+            </div>
+            <div class="contacts"><h2>Contact information: <br> Address: 1855A DWayne Street, Carlsbad, CA 92008 <br> Phone: 234-654-5746</h2></div>
+            <div class="credit"><h2>&copy; <span class="color" id="current_year"></span> Bountiful Foods| <span>ThankGod Andrew</span> | 
+                Last Updated: <span class="color" id="last_update"></span></h2></div>
+                <div class="weather-source"><a href="https://openweathermap.org" target="_blank">Weather Source: OpenWeatherMap.org</a><br><a href="https://www.folkstalk.com/2022/09/open-weather-map-api-key-with-code-examples.html" target="_blank">Premium Subscription for Daily Forecast API key Source: folkstalk.com</a></div>
+                <div class="weather-source"><a href="https://unsplash.com" target="_blank">Images Source: unsplash.com</a></div>
+        </section>
+    </footer>
+  
+<script src="js/home.js"></script>
+<script src="js/fresh.js"></script>
 </body>
 </html>
