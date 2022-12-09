@@ -54,21 +54,20 @@ function displayResult(data, current = 'curWea') {
         // document.querySelector("#windChill").textContent = windChill
     }
     else{
-        const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
         const date = new Date();
-        const today = date.getDay();
+        let day = date.getDay();
+        const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
         const temp1 = data.daily[0].temp.max.toFixed(0);
         const temp2 = data.daily[1].temp.max.toFixed(0);
         const temp3 = data.daily[2].temp.max.toFixed(0);
 
         const day1 = document.querySelector(".day1");
-        day1.textContent = weekday[today+1];
+        day1.textContent = weekday[day + 1];
         const day2 = document.querySelector(".day2");
-        day2.textContent = weekday[today+2];
+        day2.textContent = weekday[day + 2];
         const day3 = document.querySelector(".day3");
-        day3.textContent = weekday[today+3];
+        day3.textContent = weekday[day + 3];
 
         const temperature1 = document.getElementById("temp1");
         temperature1.textContent = temp1 + "°C";
