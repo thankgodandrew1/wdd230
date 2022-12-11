@@ -101,6 +101,8 @@
         width: auto;
         margin-bottom: 10px;
     }
-
+    #required{
+        font-size: 25px;
+    }
 
 }

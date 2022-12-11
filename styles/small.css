@@ -35,13 +35,15 @@ footer {
     
 }
 
-header img {
+ /* GJN9-JYJMV-T8JY4-694JK-KQBMYheader  */
+ /* oas.employment@byui.edu */
+img {
     width: 140px;
     border-radius: 5px;
     box-shadow: 0 0 8px 3px #0067b9;
 }
 a{
-    color: #42b0e2;
+   color: #42b0e2;
 }
 a:hover{
     color: #b77148;
@@ -64,7 +66,9 @@ footer h2 {
     color: #b77148;
     ;
 }
-
+nav ul li{
+    list-style: circle;
+}
 h2 {
     font-size: 1.2em;
     margin-bottom: 1rem;
