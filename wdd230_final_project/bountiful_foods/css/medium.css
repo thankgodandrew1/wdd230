@@ -47,9 +47,9 @@
     .freshtotal p{
         font-size: 2rem;
     }
-    .forecast p:nth-child(1){
+    /* .forecast p:nth-child(1){
         font-size: 30px;
-    }
+    } */
     /* --------ABOUT US STYLING SECTION----------- */
 
     .aboutus-textarea{

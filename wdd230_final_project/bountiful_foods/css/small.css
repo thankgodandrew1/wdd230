@@ -264,7 +264,7 @@ p, a{
     margin-top: 20px;
 }
 .forecast{
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
     background: linear-gradient(to right, #bbb, #bbb, #aaa, #999);
     box-shadow: 2px 2px 5px black;    
@@ -274,7 +274,7 @@ p, a{
     padding: 8px; 
 }
 .forecast p:nth-child(1){
-    font-size: 25px;
+    font-size: 20px;
 }
 .weather{
     background: linear-gradient(to right, #bbb, #bbb, #aaa, lightgrey);
@@ -284,21 +284,22 @@ p, a{
     color: #000000;
 }
 .sky-condition{
-    border-bottom: 2px solid #999;
+    width: fit-content;
+    margin: auto;
+    border-bottom: 2px solid rgb(255, 165, 0, .7);
    
-}
-.humidity{
-    margin-top: 10px;
 }
 .freshtotal{
     background: linear-gradient(to bottom, #aaa, #9c27b0);
-    width: 100%;
+    width: 90%;
     padding: 15px;
-    margin: 5px;
+    margin: 30px auto;
+    border: 5px solid var(--secondary-color);
+    border-radius: 20%;
 }
 .freshtotal p{
-    font-size: 20px;
-    padding: 20%;
+    font-size: 16px;
+    /* padding: 20%; */
 }
 /* ------- WEATHER AND ORDER TOTAL SECTION ENDS HERE ---------- */
 
@@ -444,6 +445,9 @@ p, a{
 .fruit-section h1, p{
     text-align: center;
 }
+#output h3{
+    font-size: 25px;
+}
 #fruit-output{
     background: linear-gradient(to right, #ffa500, #ff6347 );
     color: #000;
@@ -482,12 +486,18 @@ p, a{
   
   .input:focus{
     animation: border-color ease-in-out;
-    border: 1px solid var(--accent1-color);
+    /* border: 3px solid red; */
     outline: none;
     transition: .1s;
     box-shadow: 0 0 10px 1px var(--accent1-color);
-  
   }
+.input:required{
+    outline: red solid 1px;
+    
+}
+.input:required:valid{
+    outline: 1px solid green;
+}
 .client-info{
     display: flex;
     flex-wrap: wrap;
@@ -498,6 +508,16 @@ p, a{
     padding: 10px;
 }
 
+#required{
+    display: block;
+    font-size: 25px;
+    margin: auto;
+    color: red;
+    background-color: #bbb;
+    width: fit-content;
+    font-weight: bold;
+    padding: 10px;
+}
 /* Extra small screen like Galaxy Fold Mobile*/
 @media only screen and (max-width: 300px){
     .menu .box-container{

@@ -39,21 +39,22 @@
             <form id="fruitMixForm">
                 <label hidden>Date:<input type="date" name="date" hidden id="date"></label>
                 <div class="client-info">
-                    <label for="fname"><b>First Name*</b><input type="text" name="fname" aria-label="First Name" class="input" id='fname'></label>                                            
-                    <label><b>Email*</b><input name="email" type="email" id="email" class="input"></label>
-                    <label><b>Phone Number*</b><input name="phone" type="tel" id="phone" class="input"></label>
+                    <label for="fname"><b>First Name*</b><input type="text" name="fname" aria-label="First Name" class="input" id='fname' required></label>                                            
+                    <label><b>Email*</b><input name="email" type="email" id="email" class="input" required></label>
+                    <label><b>Phone Number*</b><input name="phone" type="tel" id="phone" class="input" required></label>
                 </div>
                 <div id="fruit-selector" class="selector">
-                    <b>Please Select up to 3 fruits:</b>
+                    <p><b>Please Select up to 3 fruits:</b></p>
                 </div>
                 <label class="textarea"><b>Add special requests:</b><textarea name="specialInstruc" cols="110" rows="5" id="specialInstruc" class="input"></textarea></label>   
-                <button id="Btn" class="btn">Mix it!</button>
+                <label><input type="button" value="Make Your Drink!" class="btn" id="Btn"></label>
             </form>
+            <label id="required">Please fill the required fields!</label>
         </section>
         <section id="fruit-output">
             <h2>Fruit Mix Output:</h2>
             <div id="output">
-                <p>Please create a fruit drink mix to see it's nutrients.</p>
+                <p>Create a fruit drink mix to see it's nutrients.</p>
             </div>
         </section>
     </main>
