@@ -1,5 +1,5 @@
 // $$$$$$$$$$$$ THE FRESH PAGE FUNCTION SECTION
-let drinksMade = Number(window.localStorage.getItem("drinksMade"));
+let totalOrder = Number(window.localStorage.getItem("totalOrder"));
 
 const fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 let fruits = [];
@@ -177,13 +177,13 @@ function displayOutput(list = fruits){
     elementList.forEach(element => {
         dOutput.appendChild(element);
     }); 
-    drinksMade ++;
+    totalOrder ++;
 
     document.getElementById("fruitMixForm").reset();
 }
 
 function fruitMixCounter(){
-    localStorage.setItem("drinksMade", drinksMade);
+    localStorage.setItem("totalOrder", totalOrder);
 }
 
 function getDate() {
