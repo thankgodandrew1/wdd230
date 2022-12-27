@@ -1,7 +1,7 @@
 //$$$$$$$$$$ The toggle function
 function toggleMenu() {
     document.querySelector('.toggle').classList.toggle('open')
-    document.getElementById('#hamburgerBtn').classList.toggle('open')
+    // document.getElementById('hamburgerBtn').classList.toggle('open')
 }
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu;
